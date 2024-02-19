@@ -1,6 +1,6 @@
 #import "inc/template.typ": *
 #show: book.with(
-  title: [notes + code],
+  title: [Binary Insights],
   author: "C Kunte",
   dedication: [for Aaryana and Saanvi],
   publishing-info: [
@@ -13,6 +13,7 @@
   depth: 2
 )
 
+/*
 #outline(
   title: [List of Figures],
   target: figure.where(kind: image),
@@ -22,6 +23,7 @@
   title: [List of Tables],
   target: figure.where(kind: table),
 )
+*/
 
 // sea-transport and inertia
 #include "/inc/tow.typ"
@@ -47,12 +49,12 @@
 #include "/inc/stormsafety.typ"
 
 // nearshore
-// #include "/inc/fenders.typ"
+#include "/inc/fenders.typ"
 
 // installation and lifting
-// #include "/inc/jf.typ"
-// #include "/inc/crane.typ"
-// #include "/inc/impact.typ"
+#include "/inc/jf.typ"
+#include "/inc/crane.typ"
+#include "/inc/impact.typ"
 
-// tlp
-// #include "/inc/tlp.typ"
+// model
+#include "/inc/model.typ"

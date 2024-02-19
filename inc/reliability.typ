@@ -35,7 +35,7 @@ The probability of component failure is as shown in @apil.
 
 #figure(
   image("/img/pf.jpg", width: 100%),
-  caption: [Probability of failure curves, courtesy: API RP-2A LRFD 1st Ed.]
+  caption: [Probability of failure curves (courtesy: API)]
 ) <apil>
 
 The (extreme) load frequency curve overlapping the strength curve represents the risk.

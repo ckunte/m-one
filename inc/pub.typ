@@ -2,7 +2,7 @@
       image("/img/apple-touch-icon-orig.png", width: 9%),
     )
 
-    *notes + code*
+    *Binary Insights*
 
     First Edition 2024
 

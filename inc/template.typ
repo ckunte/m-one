@@ -27,6 +27,9 @@
   set text(font: "erewhon")
   show raw: set text(font: "Inconsolata")
 
+  // Set numbering for heading
+  // set heading(numbering: "1.1")
+
   // Table caption
   show figure.where(
     kind: table

@@ -6,19 +6,19 @@ Scripts produced from thinking linearly tend to grow verbose is what I've come t
 
 Here in examples below, I am trying to calculate bending stresses in piles hung over the aft of a transport vessel. In the first example, I front-load a range of motions for each of which I get to map corresponding bending stresses in a pile section with a certain fixed pile length. See @u1.
 
-In the second, I nail down a motion set (e.g., large barge criteria, but can be anything specific), and map acceptable length of overhang. See @u2.
+In the second, I nail down a motion set (e.g., large barge criteria, but can be anything specific), and map acceptable length of overhang. See @u2. Shaded area indicates exceeding strength limits.
 
 #figure(
   image("/img/unconditional-1.png", width: 100%),
   caption: [
-  Generating bending stress in overhung pile for a range of vessel motions (left:from pitch; right:from roll). Shaded area indicates exceeding strength limits
+  Generating bending stress in overhung pile for a range of vessel motions (left:from pitch; right:from roll)
   ],
 ) <u1>
 
 #figure(
   image("/img/unconditional-2.png", width: 100%),
   caption: [
-  Generating bending stress for a range of pile overhang for specific vessel motions (left:from pitch; right:from roll). Shaded area indicates exceeding strength limits
+  Generating bending stress for a range of pile overhang for specific vessel motions (left:from pitch; right:from roll)
   ],
 ) <u2>
 
