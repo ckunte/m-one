@@ -61,7 +61,11 @@ I was of course pleased that the story had a better ending, as the feedback sugg
 
 But before I conclude, let me say this following: I was conflicted for months on whether or not to write this up for the fear of sounding disrespectful, despite best efforts. I deeply respect the candid sharing, and I am indeed grateful for the causal feedback from which we as a community can learn and benefit from. This note should be read in that spirit --- of learning (and helping similarly challenged teams) to resist such temptations in future, and to help realise that there are least one or two solutions for managing fatigue,#footnote[Even if the asset is in the later stages of being fabricated.] but that TSA is not one of them.
 
+#pagebreak(weak: true)
+
 The code to generate @tj is as follows.
+
+#v(1em)
 
 ```python
 #!/usr/bin/env python3

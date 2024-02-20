@@ -108,18 +108,18 @@ Once this was done, calibrating other locations to Gulf of Mexico safety level b
 For the target $P_f$ = 3E-5/y (which corresponds to $P_("f20")$ = 6E-4 "for 20 years"), $beta_(20)$ could be determined as equal to 3.239. Using this safety index, probability density function plots could be generated for all tabulated regions --- as I have done below.
 
 #figure(
-  image("/img/expcat-L1.png", width: 90%),
+  image("/img/expcat-L1.png", width: 100%),
   caption: [Probability density for exposure level L1 ($P_f$ = 3E-5/y)]
 ) <l1>
-
-#figure(
-  image("/img/expcat-L2.png", width: 90%),
-  caption: [Probability density for exposure level L2 ($P_f$ = 5E-4/y)]
-) <l2>
 
 Also, using this new safety index and the table above, the ISO 19902 has tabulated the mean RSR (Rm) and $gamma_E$ for the Australian Northwest Shelf and the North Sea in A.9.9.3. 
 
 So, in a gist, that's the general theory to develop mean RSR and $gamma_E$, which could be applied to new locations, if $E_("mean")$ and $V_E$ could be determined from Metocean and Structural response studies like Shell did in the 90s for its NS and AU assets, and later for its Southeast Asian assets. Of course, statistically extending a dataset of one region's safety index entirely to another depends very much on how well the means and COVs are computed for the new region --- and in general feels both like a novel idea as well as a hack. But for our generation, this will do.
+
+#figure(
+  image("/img/expcat-L2.png", width: 100%),
+  caption: [Probability density for exposure level L2 ($P_f$ = 5E-4/y)]
+) <l2>
 
 == Partial action factors and reserve strength ratios
 
@@ -193,18 +193,20 @@ The easiest way to use the above equation is to pick a range of RSR values in te
 One may notice some values in @rm that are either similar or close to those listed in $section$A.9.9.3.3, ISO 19902:2007.
 
 #figure(
-  image("/img/pra-2.svg", width: 100%),
+  image("/img/pra-2.svg", width: 90%),
   caption: [
     Return period v. Reserve strength ratio
   ]
 ) <pr2>
 
 #figure(
-  image("/img/pra-1.svg", width: 100%),
+  image("/img/pra-1.svg", width: 90%),
   caption: [
     Return period v. Partial action factor
   ]
 ) <pr1>
+
+#pagebreak(weak: true)
 
 Plot code to generate probability density plots is as follows.
 

@@ -108,7 +108,11 @@ While working on a project recently, I took the opportunity to develop the effec
 
 where, $L_x$, $L_y$, and $L_z$ are are distances between barge centre of rotation and cargo centre of gravity in x (along barge length), y (along barge width), and z (vertical) respectively.
 
-The plot code for all standard vessel types, described in 0030/ND is as follows.
+#pagebreak(weak: true)
+
+The plot script for all standard vessel types, described in 0030/ND is as follows.
+
+#v(1em)
 
 ```python
 #!/usr/bin/env python
@@ -224,9 +228,9 @@ if __name__ == '__main__':
     main()
 ```
 
-#pagebreak()
-
 For non-standard motion responses, particularly in benign environments that exhibit lower single amplitude motion and lower full cycle period, the following code could be used. It requires all values to be input.
+
+#v(1em)
 
 ```python
 #!/usr/bin/env python
@@ -235,16 +239,16 @@ For non-standard motion responses, particularly in benign environments that exhi
 """Influence of cargo eccentricity on sea-transport forces. Custom vessel
 based on barge motion responses. 2017 ckunte
 
-Usage: ves.py --r=R --p=P --tr=T1 --tp=T2
-       ves.py -h, --help
-       ves.py --version
+Usage: ves_c.py --r=R --p=P --tr=T1 --tp=T2
+       ves_c.py -h, --help
+       ves_c.py --version
 
 Options:
   -h, --help  Show this help screen
-  --r=R       Single amp.roll angle (deg) [default: 20.0]
-  --p=P       Single amp.pitch angle (deg) [default: 12.5]
-  --tr=T1     Single amp.roll period (s) [default: 10.0]
-  --tp=T2     Single amp.pitch period (s) [default: 10.0]
+  --r=R       Single amplitude roll angle (deg) [default: 20.0]
+  --p=P       Single amplitude pitch angle (deg) [default: 12.5]
+  --tr=T1     Single amplitude roll period (s) [default: 10.0]
+  --tp=T2     Single amplitude pitch period (s) [default: 10.0]
   --version   Show version
 
 """

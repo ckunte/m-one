@@ -7,7 +7,7 @@ In order to set a suitable design criteria, I am looking to compare two classes 
   caption: [
     S-N curves in seawater with cathodic protection based on ISO 19902
   ]
-) <snc>
+) <snci>
 
 The basic S-N curve equation is as follows, which one may know is from Paris-Erdogan law (fracture mechanics):
 
@@ -36,7 +36,7 @@ then,
 
 $ k_1 = 10^(12.18) $
 
-Code for plotting hotspot stresses versus number of cycles, see @snc and @snt, is as follows.
+Code for plotting hotspot stresses versus number of cycles is as follows.
 
 ```python
 #!/usr/bin/env python3
@@ -116,10 +116,9 @@ if __name__ == "__main__":
     main()
 ```
 
-$ - * - $
-
 == Comparison of S-N curves between standards
 
 + See #link("http://dx.doi.org/10.13140/RG.2.2.14995.20006")[ISO 19902 and DNV-RP-C203]
 + See #link("http://dx.doi.org/10.13140/RG.2.2.28416.97289")[BS 7608 and DNV-RP-C203]
 
+$ - * - $

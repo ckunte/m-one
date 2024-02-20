@@ -9,6 +9,8 @@ The following offers a way to visualize wind profile for a given `Uo` and `t` fo
   caption: [Wind as per ISO 19901]
 ) <iw>
 
+#pagebreak(weak: true)
+
 Plot code to generate @iw is as follows.
 
 ```python
@@ -74,7 +76,7 @@ if __name__ == '__main__':
 == Probability density function
 
 #figure(
-  image("/img/pdf.svg", width: 100%),
+  image("/img/pdf.svg", width: 88%),
   caption: [Probability density function]
 ) <p1>
 
@@ -84,7 +86,7 @@ Plot code to generate @p1 is as follows.
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 """
-pdf.py: 2016 ckunte
+wind_pdf.py: 2016 ckunte
 """
 import numpy as np
 import matplotlib.pyplot as plt

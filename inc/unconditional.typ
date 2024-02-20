@@ -22,6 +22,8 @@ In the second, I nail down a motion set (e.g., large barge criteria, but can be 
   ],
 ) <u2>
 
+#pagebreak(weak: true)
+
 Code for @u1 is as follows. 
 
 ```python
@@ -326,6 +328,8 @@ if __name__ == "__main__":
 ```
 
 Code for @u2 is as follows.
+
+#v(1em)
 
 ```python
 #!/usr/bin/env python3

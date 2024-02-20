@@ -4,7 +4,7 @@
 
     *Binary Insights*
 
-    First Edition 2024
+    First Edition #datetime.today().display("[year]")
 
     This free book is a collection of notes + code published originally on #link("https://ckunte.net")[ckunte.net] c. 2006--24. This open-sourced book is self-published by the author. Its source and compilation may be downloaded from the repository #link("https://github.com/ckunte/book")[github.com/ckunte/book].
 
@@ -14,7 +14,7 @@
 
     MIT License
 
-    Copyright #sym.copyright 2024 C KUNTE
+    Copyright #sym.copyright #datetime.today().display("[year]") C KUNTE
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of this document and associated code (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

@@ -27,9 +27,6 @@
   set text(font: "erewhon")
   show raw: set text(font: "Inconsolata")
 
-  // Set numbering for heading
-  // set heading(numbering: "1.1")
-
   // Table caption
   show figure.where(
     kind: table
@@ -50,28 +47,6 @@
     margin: (bottom: 1.75cm, top: 2.25cm),
   )
 
-  // shade code block alternative with line numbers
-  /*
-  show raw: it => stack(dir: ttb, ..it.lines)
-  show raw.line: it => {
-    box(
-      width: 100%,
-      height: 1.75em,
-      inset: 0.2em,
-      fill: if calc.rem(it.number, 2) == 0 { luma(90%) } else { white },
-      align(horizon, stack(
-        dir: ltr,
-        box(width: 10pt)[#it.number],
-        it.body,
-      ))
-    )
-  }
-
-  show raw.line: block.with(
-    fill: luma(80%)
-  );    
-  */
-  
   // The first page.
   page(align(center + horizon)[
     #text(2em)[*#title*]

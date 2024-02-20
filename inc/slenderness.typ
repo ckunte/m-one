@@ -60,7 +60,6 @@ slenderness.py -- 2021 ckunte
 """
 import numpy as np
 
-
 # Tube section properties (A, I, r)
 def secprop(D, t):
     # Area of cross section

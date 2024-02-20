@@ -38,6 +38,8 @@ The way to read the above graph is pretty simple:
 + The intersection of the curve (for each pipe size of D$times$t) with the upper boundary of the non-shaded area (i.e., $V_r$ = 1.0) indicates the max. possible pipe length (span) that is unlikely to experience VIV from (ocean) current. For example, 762OD$times$22WT pipe can span up to 40m, while a 406OD$times$22WT only up to 22m before VIV occurs.
 + The shaded overlap is a zone in which both inline as well as crossflow VIV excitations occur. (See range of occurrences in @vi1.)
 
+#pagebreak(weak: true)
+
 Code for generating the plot shown in @vi2 is as follows.
 
 ```python
