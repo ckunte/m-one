@@ -44,14 +44,14 @@ Either way, the team appeared to have a fatigue problem in pile girth welds, and
 
 I am certain that the non-seawater S-N curves were never meant to be used this way, and that the authors of international standards would be suitably shocked if they were made aware of such a use case. But even if we consider this debatable in the vein that unusual circumstances demand unusual methods and therefore merit justification, I am here to say that there are technical reasons why this perceived solution offers neither value nor the desired outcome. To illustrate why, let me first plot S-N curves for tubular joints, since a foundation pile is essentially a tube. Here, I will use the recipe from the ISO 19902:2007 standard, but other standards can be considered too, if required.
 
+Comparing the two curves in @tj, it is clear that there is not a lot of value here (20MPa--40MPa relief in hotspot stresses) to take the trouble of insulating welds from seawater. I am also here to say that TSA can never offer the sort of insulation, which the team thought it would provide, for two reasons, (a) TSA is a thin-film surface coating whose thickness rarely exceeds 150$mu$ --- to be effective in adhesion. By virtue of its thickness (or lack thereof) and due to the method of application (i.e., hot metal spraying), the resulting coating is not only porous, but that it requires filler material to cover these pores for it to be effective, and (b) surface roughness is an issue as mentioned earlier. (Welded surfaces are rough unless ground smooth.)
+
 #figure(
   image("/img/sncurves-tj.svg", width: 100%),
   caption: [
     S-N curves for tubular joints in air and in seawater
     ]
 ) <tj>
-
-Comparing the two curves in @tj, it is clear that there is not a lot of value here (20MPa--40MPa relief in hotspot stresses) to take the trouble of insulating welds from seawater. I am also here to say that TSA can never offer the sort of insulation, which the team thought it would provide, for two reasons, (a) TSA is a thin-film surface coating whose thickness rarely exceeds 150$mu$ --- to be effective in adhesion. By virtue of its thickness (or lack thereof) and due to the method of application (i.e., hot metal spraying), the resulting coating is not only porous, but that it requires filler material to cover these pores for it to be effective, and (b) surface roughness is an issue as mentioned earlier. (Welded surfaces are rough unless ground smooth.)
 
 So if this solution isn't a solution at all, and fatigue concerns persisted but were realised very late, then what could be done? Well, there are at least a couple of solutions to improve fatigue life of joints. They are by (a) weld geometry improvement methods (e.g., grinding), and (b) residual stress methods (e.g., peening) with increasing effectiveness. UIT peening#footnote[UIT Peening is a cold remoulding of steel / weld by applying uniform stress-relieving controlled blows over the entire welded surface with an ultrasonic hand held gun.] for example is known to improve fatigue life by a factor of four (4). See Table 16.16-1, ISO 19902:2007, and Chapter 6 in _Fatigue Handbook_, A. Almar Naess.
 
@@ -60,8 +60,6 @@ In summary, (a) the threat of corrosion fatigue is one of longer term, and it is
 I was of course pleased that the story had a better ending, as the feedback suggests, which is that the originally-conceived method to improve fatigue performance was not implemented. 
 
 But before I conclude, let me say this following: I was conflicted for months on whether or not to write this up for the fear of sounding disrespectful, despite best efforts. I deeply respect the candid sharing, and I am indeed grateful for the causal feedback from which we as a community can learn and benefit from. This note should be read in that spirit --- of learning (and helping similarly challenged teams) to resist such temptations in future, and to help realise that there are least one or two solutions for managing fatigue,#footnote[Even if the asset is in the later stages of being fabricated.] but that TSA is not one of them.
-
-#pagebreak(weak: true)
 
 The code to generate @tj is as follows.
 

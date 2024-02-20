@@ -25,22 +25,22 @@ The research that went into producing this method included the following steps:
 
 PRAC 80-22 Project defined the reliability model for a structure as one that should incorporate safety margins and uncertainties in evaluating risk to a component or system.
 
+The probability of component failure is as shown in @apil.
+
 $ "Risk" 
     &= 1 - "Reliability" \
     &= P_("failure") \
     &= "Strength" < "Load"
 $
 
-The probability of component failure is as shown in @apil.
+The (extreme) load frequency curve overlapping the strength curve represents the risk.
+
+The model is viewed as a situation in which the probabilities correspond to the worst loading case --- annual or lifetime, as appropriate. This overlap (i.e., probability of failure) would decrease if either (i) the mean margin of safety increases, or (ii) the uncertainty ($sigma$) in load or resistance reduces.
 
 #figure(
   image("/img/pf.jpg", width: 100%),
   caption: [Probability of failure curves (courtesy: API)]
 ) <apil>
-
-The (extreme) load frequency curve overlapping the strength curve represents the risk.
-
-The model is viewed as a situation in which the probabilities correspond to the worst loading case --- annual or lifetime, as appropriate. This overlap (i.e., probability of failure) would decrease if either (i) the mean margin of safety increases, or (ii) the uncertainty ($sigma$) in load or resistance reduces.
 
 The analysis of reliability is carried out by defining a failure function, _g_, such that _g < 0_ denotes failure, or 
 
@@ -68,24 +68,6 @@ $
 beta = ln(R_m / E_m sqrt((1 + V_E^2) / (1 + V_R^2))) / sqrt(ln[(1 + V_R^2) dot (1 + V_E^2)])
 $
 
-The LRFD method caught-on. Shell engineers extended the concept to numerous geographical areas#footnote[Efthymiou, M., et al., _Reliability-based Criteria for Fixed Steel Offshore Platforms_, Transactions of the ASME, Vol. 119, May 1997.] to develop the following table.
-
-#figure(
-    table(
-      columns: (1fr, 1fr, 1fr, 1fr, 1fr),
-      inset: 10pt,
-      align: horizon,
-      [_Area_], [_MPM_], [_Mean_], [_COV ($sigma_E$)_], [_$V_E$_],
-      [GoM]     , [0.68], [0.79], [0.25], [0.32],
-      [NNS]     , [0.75], [0.81], [0.21], [0.265],
-      [CNS, SNS], [0.80], [0.84], [0.18], [0.212],
-      [AUS]     , [0.67], [0.78], [0.26], [0.33],      
-    ),
-    caption: [Parameters of lognormal distribution of extreme 20-year load in various geographical areas (E=1.0 corresponds to $E_(100)$)],
-) <lnd>
-
-where, $E_20$ is the most probable value, and $E_(20m)$ is the mean value. In addition to $V_E$ provided above, uncertainty in hydrodynamic areas, volumes and marine growth, must be accounted for. This effect is covered by using COV = 8% and a bias factor of 1.0 (= ratio of mean value to characteristic value). This COV must be combined with COV values in table above.
-
 Based on the GoM database, the following were derived, viz., 
 
 $ 
@@ -103,7 +85,25 @@ $ R_m
     &= 1.37 dot gamma_E 
 $
 
-Once this was done, calibrating other locations to Gulf of Mexico safety level became easier. To extend this to a target probability of failure, first a target needed to be defined for the platform type. The industry now generally recognises it to be 3E-5/y for a manned new installation, which would be 6E-4 for 20 years ($= 20 dot 3E-5 / y$).
+The LRFD method caught-on. Shell engineers extended the concept to numerous geographical areas#footnote[Efthymiou, M., et al., _Reliability-based Criteria for Fixed Steel Offshore Platforms_, Transactions of the ASME, Vol. 119, May 1997.] to develop @lnd.
+
+#figure(
+    table(
+      columns: (1fr, 1fr, 1fr, 1fr, 1fr),
+      inset: 10pt,
+      align: horizon,
+      [_Area_], [_MPM_], [_Mean_], [_COV ($sigma_E$)_], [_$V_E$_],
+      [GoM]     , [0.68], [0.79], [0.25], [0.32],
+      [NNS]     , [0.75], [0.81], [0.21], [0.265],
+      [CNS, SNS], [0.80], [0.84], [0.18], [0.212],
+      [AUS]     , [0.67], [0.78], [0.26], [0.33],      
+    ),
+    caption: [Parameters of lognormal distribution of extreme 20-year load in various geographical areas (E=1.0 corresponds to $E_(100)$)],
+) <lnd>
+
+where, $E_20$ is the most probable value, and $E_(20m)$ is the mean value. In addition to $V_E$ provided above, uncertainty in hydrodynamic areas, volumes and marine growth, must be accounted for. This effect is covered by using COV = 8% and a bias factor of 1.0 (= ratio of mean value to characteristic value). This COV must be combined with COV values in table above.
+
+Once this was done, calibrating other locations to Gulf of Mexico safety level became easier. To extend this to a target probability of failure, first a target needed to be defined for the platform type. The industry now generally recognises it to be 3E-5/y for a manned new installation, which would be 6E-4 for 20 years (= 20 $dot$ 3E-5/y).
 
 For the target $P_f$ = 3E-5/y (which corresponds to $P_("f20")$ = 6E-4 "for 20 years"), $beta_(20)$ could be determined as equal to 3.239. Using this safety index, probability density function plots could be generated for all tabulated regions --- as I have done below.
 

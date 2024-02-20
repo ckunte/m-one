@@ -1,6 +1,6 @@
 = Wind
 
-The following offers a way to visualize wind profile for a given `Uo` and `t` for a range of heights up to a maximum of `h`.
+The following offers a way to visualize wind profile for a given $U_o$ and $t$ for a range of heights up to a maximum of $h$.
 
 == Based on ISO 19901-1:2005
 

@@ -30,6 +30,8 @@ where,
 
 Code for plotting performance curves of air block, floating pneumatic and cell fenders is as follows.
 
+#v(1em)
+
 ```python
 #!/usr/bin/env python3
 # encoding: utf-8

@@ -1,6 +1,6 @@
 #import "inc/template.typ": *
 #show: book.with(
-  title: [Binary Insights],
+  title: [binary insights],
   author: "C Kunte",
   dedication: [for Aaryana and Saanvi],
   publishing-info: [
@@ -24,6 +24,9 @@
   target: figure.where(kind: table),
 )
 */
+
+// preface
+#include "/inc/preface.typ"
 
 // sea-transport and inertia
 #include "/inc/tow.typ"
@@ -58,3 +61,5 @@
 
 // model
 #include "/inc/model.typ"
+
+#pagebreak()

@@ -2,11 +2,11 @@
       image("/img/apple-touch-icon-orig.png", width: 9%),
     )
 
-    *Binary Insights*
+    *binary insights*
 
     First Edition #datetime.today().display("[year]")
 
-    This free book is a collection of notes + code published originally on #link("https://ckunte.net")[ckunte.net] c. 2006--24. This open-sourced book is self-published by the author. Its source and compilation may be downloaded from the repository #link("https://github.com/ckunte/book")[github.com/ckunte/book].
+    This free book is a collection of notes + code published originally on #link("https://ckunte.net")[ckunte.net] c. 2010--24. This open-sourced book is self-published by the author. Its source and compilation may be downloaded from the repository #link("https://github.com/ckunte/bi")[github.com/ckunte/bi].
 
     The author welcomes feedback at #link("mailto:me@ckunte.net")[me\@ckunte.net]
 

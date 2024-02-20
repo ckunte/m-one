@@ -24,7 +24,7 @@
   set document(title: title, author: author)
 
   // Set the body font
-  set text(font: "erewhon")
+  set text(font: "Source Serif Pro")
   show raw: set text(font: "Inconsolata")
 
   // Table caption

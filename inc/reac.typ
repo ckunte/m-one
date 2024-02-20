@@ -1,6 +1,6 @@
 = Mapping dynamics
 
-While sifting through some of my files yesterday, I found a spread-sheet using Gaussian elimination technique, refreshing old memories. In 2004, we were engineering a spar + topside --- the first of its kind for the region. For transport, we designed the topside to straddle atop two lean barges --- like a catamaran. This enabled the topside to be floated over, and mate with the spar.
+While sifting through some of my files yesterday, I found a spread-sheet using Gaussian elimination technique, refreshing old memories. In 2004, we were engineering a SPAR + topside --- the first of its kind for the region. For transport, we designed the topside to straddle atop two lean barges --- like a catamaran. This enabled the topside to be floated over, and mate with the SPAR.
 
 We quickly realised that the catamaran arrangement was a stiffness hog for the topside during tow (racking moments resulting from quartering seas) --- driving the need for more steel in the topside, far more than in its in-service conditions.#footnote[Michael Luo's US 8312828 B2 patent titled, "Pre-loading to reduce loads and save steel on topsides and grillage of catamaran systems" describes the measures we took to save steel.]
 
@@ -22,7 +22,7 @@ $ mat(
   M_"z1",  M_"z2",  M_"z3",  M_"z4",  M_"z5",  M_"z6", dots.v, M_z;
 ) $
 
-Back to the spreadsheet, I noticed that we had actually generated a multiple pivot-eliminate routines through iterations, until all coefficients (except the principal diagonal) were [decomposed][d], and coefficients in the principal diagonal contained 1 each --- as is done in the technique. 
+Back to the spreadsheet, I noticed that we had actually generated a multiple pivot-eliminate routines through iterations, until all coefficients (except the principal diagonal) were decomposed, and coefficients in the principal diagonal contained 1 each --- as is done in the technique. 
 
 Matrices are now available in most modern computing software. Gaussian elimination, on the other hand, was perhaps from an era of logarithms and radians --- designed to simplify computational complexity when done by hand. So, I am not sure why we used this technique, in lieu of matrix functions in Excel or MathCAD available at our disposal.
 

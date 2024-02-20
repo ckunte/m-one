@@ -9,7 +9,7 @@ At first look, with all motion parameters greater, this may still look like the 
       columns: (1fr, auto, auto),
       inset: 10pt,
       align: horizon,
-      [], [*North Sea*], [*South China Sea*],
+      [], [_North Sea_], [_South China Sea_],
       [Barge size (m)], [>76 $times$ >23], [91.4 $times$ 27.4],
       [Roll ($alpha$, $T_r$)], [20$degree$, 10s], [12.5$degree$, 5s],
       [Pitch ($beta$, $T_p$)], [12.5$degree$, 10s], [8$degree$, 5.5s],
@@ -36,10 +36,10 @@ where, $T_r$, $T_p$, and $T_h$ are full cycle periods associated with roll, pitc
 
 #figure(
   table(
-    columns: (1fr, auto, auto, auto),
+    columns: (1fr, 1fr, 1fr, 1fr),
     inset: 10pt,
     align: horizon,
-    [], [*North Sea*], [*South China Sea*], [*Incr*],
+    [], [_North Sea_], [_South China Sea_], [_Increase_],
     [$theta_r$ $("rad")/s^2$], [0.14], [0.34], [143%],
     [$theta_p$ $("rad")/s^2$], [0.09], [0.22], [144%],
     [gh $m/s^2$], [1.96], [1.96], [--],
