@@ -2,9 +2,9 @@
 #show: book.with(
   title: [binary insights],
   author: "C Kunte",
-  dedication: [for Aaryana and Saanvi],
+  dedication: [for Aaryana _&_ Saanvi],
   publishing-info: [
-    #include("/inc/pub.typ")
+    // #include("/inc/pub.typ")
   ],
 )
 
