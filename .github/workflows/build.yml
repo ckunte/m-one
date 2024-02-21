@@ -13,8 +13,11 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+
+      - name: prep typst
         uses: typst-community/setup-typst@v3
       - run: typst compile bi.typ bi.pdf
+
       - name: release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
