@@ -24,8 +24,14 @@
   set document(title: title, author: author)
 
   // Set the body font
-  set text(font: "Source Serif Pro")
-  show raw: set text(font: "Inconsolata")
+  set text(
+    font: "New Computer Modern", // Source serif Pro
+    top-edge: "cap-height", 
+    bottom-edge: "baseline",
+    number-type: "old-style",
+    size: 11pt
+    )
+  show raw: set text(size: 7.5pt)
 
   // Table caption
   show figure.where(
