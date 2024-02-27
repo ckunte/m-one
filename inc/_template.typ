@@ -29,7 +29,7 @@
     top-edge: "cap-height", 
     bottom-edge: "baseline",
     number-type: "old-style",
-    size: 11pt
+    // size: 10pt // 11pt is default
     )
   show raw: set text(size: 7.5pt)
 
@@ -43,6 +43,7 @@
 
   // Set block quote
   set quote(block: true)
+  // show quote: set text(style: "italic")
 
   // Set blue color for links
   show link: set text(fill: rgb(0, 0, 255))
@@ -77,8 +78,8 @@
   pagebreak(to: "odd")
 
   // Configure paragraph properties.
-  set par(leading: 0.78em, first-line-indent: 12pt, justify: true)
-  show par: set block(spacing: 0.78em)
+  set par(leading: 0.65em, first-line-indent: 12pt, justify: true)
+  show par: set block(spacing: 0.65em)
 
   // Start with a chapter outline.
   // outline(title: [Chapters])

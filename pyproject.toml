@@ -1,14 +1,14 @@
 [project]
-name = "biscripts"
-description = "python code accompanying the book Binary Insights"
+name = "wn_scripts"
+description = "python code accompanying the book worknotes"
 keywords = [
 "buckling", "crane", "fenders", "impact", "reliability", "sncurves", "stability", "stormsafety", "tow", "viv", "wind"]
 dynamic = ["version"]
 authors = [
-    { name = "Chetan Kunte", email = "me+bi@ckunte.net" }
+    { name = "Chetan Kunte", email = "me+wn@ckunte.net" }
 ]
 maintainers = [
-    { name = "Chetan Kunte", email = "me+bi@ckunte.net" }
+    { name = "Chetan Kunte", email = "me+wn@ckunte.net" }
 ]
 readme = "README.md"
 license = { file = "LICENSE" }

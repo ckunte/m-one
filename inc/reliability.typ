@@ -174,7 +174,7 @@ The easiest way to use the above equation is to pick a range of RSR values in te
 
 #figure(
     table(
-      columns: (2fr, 1fr, 1fr, 1fr, 1fr),
+      columns: (1.25fr, 1fr, 1fr, 1fr, 1fr),
       inset: 10pt,
       align: horizon,
       [], [_$R_m$_], [_$gamma_E$_], [_$R_m$_], [_$gamma_E$_],
@@ -190,7 +190,7 @@ The easiest way to use the above equation is to pick a range of RSR values in te
     ],
 ) <rm>
 
-One may notice some values in @rm that are either similar or close to those listed in $section$A.9.9.3.3, ISO 19902:2007.
+One may notice some values in @rm that are either similar or close to those listed in $section$A.9.9.3.3, ISO 19902:2007.#footnote[Note, this section has been eliminated in the latest ISO 19902:2020 version.]
 
 #figure(
   image("/img/pra-2.svg", width: 90%),

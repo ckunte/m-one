@@ -1,8 +1,8 @@
 = Mapping dynamics
 
-While sifting through some of my files yesterday, I found a spread-sheet using Gaussian elimination technique, refreshing old memories. In 2004, we were engineering a SPAR + topside --- the first of its kind for the region. For transport, we designed the topside to straddle atop two lean barges --- like a catamaran. This enabled the topside to be floated over, and mate with the SPAR.
+While sifting through some of my files yesterday, I found a spread-sheet using Gaussian elimination technique, refreshing old memories. In 2004, we were engineering a #smallcaps[spar] + topside --- the first of its kind for the region. For transport, we designed the topside to straddle atop two lean barges --- like a catamaran. This enabled the topside to be floated over, and mate with the #smallcaps[spar].
 
-We quickly realised that the catamaran arrangement was a stiffness hog for the topside during tow (racking moments resulting from quartering seas) --- driving the need for more steel in the topside, far more than in its in-service conditions.#footnote[Michael Luo's US 8312828 B2 patent titled, "Pre-loading to reduce loads and save steel on topsides and grillage of catamaran systems" describes the measures we took to save steel.]
+We quickly realised that the catamaran arrangement was a stiffness hog for the topside during tow (racking moments resulting from quartering seas) --- driving the need for more steel in the topside, far more than in its in-service conditions.#footnote[Michael Luo's US 8312828 B2 patent, _Pre-loading to reduce loads and save steel on topsides and grillage of catamaran systems_, describes the measures we took to save steel.]
 
 Marine team furnished motion-induced dynamic loads of the catamaran barge ensemble (from motion responses) for  topside stress check during its fourteen-day tow. To transfer these on to the topside as inertia loads, we did the following:
 

@@ -2,7 +2,7 @@
 
 This is a script I have had to write at different times and in different tools in the past --- either to figure out the depth type or when requiring appropriate wave length(s) to calculate hydrostatic pressure. Here's hoping this will be the last.
 
-For background, dispersion relation#footnote[Dispersion relation (eq. 24), Wave and Wave Effects (pp. 240--246), J.N. Newman, Marine Hydrodynamics, The MIT Press, 1977.], which expresses wave length ($lambda$)#footnote[$lambda$ is not to be confused with `lambda` the anonymous function in python programming language.] in terms of wave number ($kappa = 2pi / lambda$) and angular wave frequency ($omega = 2pi / T$) is as follows:
+For background, dispersion relation#footnote[Dispersion relation (eq. 24), Wave and Wave Effects (pp. 240--246), J.N. Newman, Marine Hydrodynamics, The MIT Press, 1977.], which expresses wave length ($lambda$)#footnote[$lambda$ is not to be confused with _lambda_ the anonymous function in python programming language.] in terms of wave number ($kappa = 2pi / lambda$) and angular wave frequency ($omega = 2pi / T$) is as follows:
 
 $ omega^2 / g = kappa tanh(kappa d) $
 

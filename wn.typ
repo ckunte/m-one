@@ -1,10 +1,11 @@
-#import "inc/template.typ": *
+#import "inc/_template.typ": *
+#let mytitle = [worknotes]
 #show: book.with(
-  title: [binary insights],
+  title: mytitle,
   author: "C Kunte",
   dedication: [for Aaryana _&_ Saanvi],
   publishing-info: [
-    // #include("/inc/pub.typ")
+    #include("/inc/pub.typ")
   ],
 )
 
@@ -13,7 +14,6 @@
   depth: 2
 )
 
-/*
 #outline(
   title: [List of Figures],
   target: figure.where(kind: image),
@@ -23,10 +23,11 @@
   title: [List of Tables],
   target: figure.where(kind: table),
 )
-*/
+// Abbreviations (fix to indenting bug yet to be released)
+// #include "/inc/abbreviations.typ"
 
 // preface
-#include "/inc/preface.typ"
+#include "/inc/_preface.typ"
 
 // sea-transport and inertia
 #include "/inc/tow.typ"
