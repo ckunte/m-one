@@ -88,60 +88,8 @@ From @vcr2, it can be seen that the recipe offered by EN 13852-1 clears the pack
 
 Code for generating @cr1 is as follows.
 
-```python
-#!/usr/bin/env python3
-# -*- coding: UTF-8 -*-
-# Offshore crane minimum off-board hoisting velocity
-# vhmin.py -- 2016-21 ckunte
-# Mar 2021: code re-factored
-
-import numpy as np
-import matplotlib.pyplot as plt
-
-
-def api_spec_2c(*args):
-    cf = 0.3048  # ft -> m conversion factor
-    v1 = (0.033 * cf) + 0.098 * x1
-    v2 = 0.067 * (x2 + (3.3 * cf))
-    plt.plot(x1, v1, color="red", label="API spec 2c")
-    plt.plot(x2, v2, color="red")
-    pass
-
-
-def en_13852_1(*args):
-    # at rated capacity: [single, multiple] fall reeving
-    K_H = [0.50, 0.28]  
-    # crane on fixed platform lifting off supply vessel
-    Vd = 6.0 * x / (x + 8.0)
-    Vc = 0  # crane boom tip velocity
-    VH_sfr = K_H[0] * (Vd ** 2 + Vc ** 2) ** 0.5
-    VH_mfr = K_H[1] * (Vd ** 2 + Vc ** 2) ** 0.5
-    plt.plot(x, VH_sfr, label="EN 13852-1 (RC, SFR)")
-    plt.plot(x, VH_mfr, label="EN 13852-1 (RC, MFR)")
-    pass
-
-
-def plot_min_hoist_velo(*args):
-    api_spec_2c(x1, x2)
-    en_13852_1(x)
-    plt.grid(True)
-    plt.legend(loc=0)
-    plt.title("API v. EN for (off-board) lift off supply vessel")
-    plt.xlabel("$H_{sig}$ (m)")
-    plt.ylabel("$v_{h\,min}$ (m/s)")
-    plt.savefig("vhmin.svg")
-    plt.close()
-    pass
-
-
-if __name__ == "__main__":
-    # x, x1, x2: significant wave height ranges
-    x1 = np.arange(0.0, 1.83, 0.001)
-    x2 = np.arange(1.83, 3.0, 0.001)
-    x = np.arange(0.0, 3.0, 0.001)
-    plot_min_hoist_velo(x1, x2, x)
-    pass
-```
+#let vhmin = read("/src/vhmin.py")
+#{linebreak();raw(vhmin, lang: "python")}
 
 IOGP specification S-618#footnote[IOGP S-618 Supplementary specification to API specification 2c Offshore Pedestal-mounted Cranes.] issued in Dec 2018 now fixes the low velocity in API's off-board lift recipe, which stuck out like an anomaly#footnote[To be sure, my interest in API Spec 2C is now academic, and I am not judging it for its merits or demerits, since API's application domain is primarily the US. However, due to the fact that API standards are generally good to very good that the engineering community tends to adopt them across domains (outside USA) --- sometimes without pausing to consider whether or not cross-domain application is appropriate.], see plot above, and is now in step with that of EN 13852-1, which can be seen in the updated plot below.
 
@@ -154,60 +102,7 @@ IOGP specification S-618#footnote[IOGP S-618 Supplementary specification to API 
 
 Code for generating @ci8 is as follows.
 
-```python
-#!/usr/bin/env python3
-# -*- coding: UTF-8 -*-
-# Offshore crane minimum off-board hoisting velocity
-# vhmin.py -- 2016-21 ckunte
-# Dec 2018: IOGP fixes the issue w/ API's low vhmin prescription
-# Mar 2021: code re-factored
-
-import numpy as np
-import matplotlib.pyplot as plt
-
-
-def api_spec_2c(*args):
-    cf = 3.2808  # ft -> m conversion factor
-    v_main = (-0.0032 * (x * cf) ** 2 + 0.179 * (x * cf) + 0.0499) / cf
-    v_auxi = 1.79 * v_main
-    plt.plot(x, v_auxi, color="magenta", 
-        label="API spec 2c + IOGP S-618 (Auxi)")
-    plt.plot(x, v_main, color="red", 
-        label="API spec 2c + IOGP S-618 (Main)")
-    pass
-
-
-def en_13852_1(*args):
-    # at rated capacity: [single, multiple] fall reeving
-    K_H = [0.50, 0.28]
-    # crane on fixed platform lifting off supply vessel
-    Vd = 6.0 * x / (x + 8.0)
-    Vc = 0  # crane boom tip velocity
-    VH_sfr = K_H[0] * (Vd ** 2 + Vc ** 2) ** 0.5
-    VH_mfr = K_H[1] * (Vd ** 2 + Vc ** 2) ** 0.5
-    plt.plot(x, VH_sfr, label="EN 13852-1 (RC, SFR)")
-    plt.plot(x, VH_mfr, label="EN 13852-1 (RC, MFR)")
-    pass
-
-
-def plot_min_hoist_velo(*args):
-    api_spec_2c(x)
-    en_13852_1(x)
-    plt.grid(True)
-    plt.legend(loc=0)
-    plt.title("API v. EN for (off-board) lift off supply vessel")
-    plt.xlabel("$H_{sig}$ (m)")
-    plt.ylabel("$v_{h\,min}$ (m/s)")
-    plt.savefig("vhmin_iogp.svg")
-    plt.close()
-    pass
-
-
-if __name__ == "__main__":
-    # x: significant wave height ranges
-    x = np.arange(0.0, 3.0, 0.001)
-    plot_min_hoist_velo(x)
-    pass
-```
+#let vhmin_iogp = read("/src/vhmin_iogp.py")
+#{linebreak();raw(vhmin_iogp, lang: "python")}
 
 $ - * - $
