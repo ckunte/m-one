@@ -8,7 +8,7 @@ When a sizeable number of assets are validated by their use, standards developed
 
 Take for instance the primary purpose of offshore cranes mounted on pedestals on offshore platforms --- fixed or floating. They lift cargo and supplies off a floating vessel, which in turn are influenced by incoming waves.
 
-Off-board lift, as API Spec 2c explains, is "the hoisting velocity at the elevation where lift is initiated (i.e., supply boat deck level) shall be fast enough to avoid re-contact after the load is lifted." 
+Off-board lift, as API Spec 2C explains, is "the hoisting velocity at the elevation where lift is initiated (i.e., supply boat deck level) shall be fast enough to avoid re-contact after the load is lifted." 
 
 == Off-board lift using API Spec 2C
 
@@ -91,7 +91,7 @@ Code for generating @cr1 is as follows.
 #let vhmin = read("/src/vhmin.py")
 #{linebreak();raw(vhmin, lang: "python")}
 
-IOGP specification S-618#footnote[IOGP S-618 Supplementary specification to API specification 2c Offshore Pedestal-mounted Cranes.] issued in Dec 2018 now fixes the low velocity in API's off-board lift recipe, which stuck out like an anomaly#footnote[To be sure, my interest in API Spec 2C is now academic, and I am not judging it for its merits or demerits, since API's application domain is primarily the US. However, due to the fact that API standards are generally good to very good that the engineering community tends to adopt them across domains (outside USA) --- sometimes without pausing to consider whether or not cross-domain application is appropriate.], see plot above, and is now in step with that of EN 13852-1, which can be seen in the updated plot below.
+IOGP specification S-618#footnote[IOGP S-618 Supplementary specification to API Specification 2C Offshore Pedestal-mounted Cranes.] issued in Dec 2018 now fixes the low velocity in API's off-board lift recipe, which stuck out like an anomaly#footnote[To be sure, my interest in API Spec 2C is now academic, and I am not judging it for its merits or demerits, since API's application domain is primarily the US. However, due to the fact that API standards are generally good to very good that the engineering community tends to adopt them across domains (outside USA) --- sometimes without pausing to consider whether or not cross-domain application is appropriate.], see plot above, and is now in step with that of EN 13852-1, which can be seen in the updated plot below.
 
 #figure(
   image("/img/vhmin_iogp.svg", width: 100%),

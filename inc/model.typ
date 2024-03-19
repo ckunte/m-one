@@ -3,7 +3,7 @@
 #figure(
   image("/img/model.png", width: 100%),
   caption: [
-    Building this model from scratch with error-checking, testing for integrity, and prepping for pushover
+    Building this model from scratch with error-checking, testing for integrity, and preparing for pushover
   ]
 ) <model>
 

@@ -5,7 +5,7 @@
   author: "C Kunte",
   dedication: [for Aaryana _&_ Saanvi],
   publishing-info: [
-    #include("/inc/pub.typ")
+    #include("/inc/_pub.typ")
   ],
 )
 
@@ -24,7 +24,7 @@
   target: figure.where(kind: table),
 )
 // Abbreviations (fix to indenting bug yet to be released)
-// #include "/inc/abbreviations.typ"
+#include "/inc/abbreviations.typ"
 
 // preface
 #include "/inc/_preface.typ"

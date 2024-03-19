@@ -42,9 +42,9 @@ def vivc(*args):
         plt.plot(l, vr, label=lbl)
         pass
     plt.title("VIV check for %.1fm/s current" % v)
-    # In-line VIV occurrence limits ( 1.0 =< Vr =< 4.5 )
+    # In-line VIV occurrence limits ( 1.0 =< vr =< 4.5 )
     plt.axhspan(1.0, 4.5, facecolor="r", alpha=0.18)
-    # Cross flow VIV occurrence limits (3.0 =< Vr =< 16.0 )
+    # Cross flow VIV occurrence limits (3.0 =< vr =< 16.0 )
     # change upper limit 16.0 to a lower value for plot
     # clarity, if necessary
     plt.axhspan(3.0, 5.0, facecolor="orange", alpha=0.18)

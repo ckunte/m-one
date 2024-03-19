@@ -12,15 +12,15 @@ Following the industry recognised recommended practice, _DNVGL-RP-C205 -- Enviro
       inset: 10pt,
       align: horizon,
       [_Excitation_], [_Lock-in_],
-      [Inline], [$1.0 lt.eq V_r lt.eq 4.5$, and $K_s lt.eq 1.8$],
-      [Crossflow], [$3.0 lt.eq V_r lt.eq 16.0$],
+      [Inline], [$1.0 lt.eq v_r lt.eq 4.5$, and $K_s lt.eq 1.8$],
+      [Crossflow], [$3.0 lt.eq v_r lt.eq 16.0$],
     ),
     caption: [Vortex shedding resonance],
 ) <vi1>
 
 The script requires the following inputs (together with consistent units). These are to be provided by the user by editing the `viv.py` and updating input parameters marked under _User inputs_ section:
 
-+ Current velocity, V (m/s) --- typically for a 1-year environment
++ Current velocity, v (m/s) --- typically for a 1-year environment
 + Marine growth thickness, tm (m)
 + Flooding condition, f (`1` for flooded; `0` for buoyant)
 + End (boundary) conditions of the pipe (fixed: `22.2`; clamped: `15.4`; simply-supported: `9.87`; cantilevered: `3.52`)
@@ -43,7 +43,7 @@ Code for generating the plot shown in @vi2 is as follows.
 #let viv = read("/src/viv.py")
 #{linebreak();raw(viv, lang: "python")}
 
-While the upper limit for cross-flow VIV lock-in is 16 (according to RP-C205), the plot may be set to a lower max.value of say 5.0 &mdash; (e.g. as done in the plot above) to keep the curvatures of plots more readable (in `plt.axhspan()` in the script) as so. Change the following line:
+While the upper limit for cross-flow VIV lock-in is 16 (according to RP-C205), the plot may be set to a lower maximum value of say 5.0 --- e.g. as done in the plot above to keep the curvatures of plots more readable (in `plt.axhspan()` in the script) as so. Change the following line:
 
 ```python
 plt.axhspan(3.0, 16.0, facecolor='orange', alpha=0.18)
