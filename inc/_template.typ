@@ -31,7 +31,13 @@
     number-type: "old-style",
     // size: 10pt // 11pt is default
     )
+  // raw text / code
   show raw: set text(size: 7.5pt)
+
+  // Small caps
+  show regex("([A-Z]{2,})"): sc => {
+    smallcaps(lower(sc))
+  }   
 
   // Table caption
   show figure.where(

@@ -80,7 +80,7 @@ However, marine cargo transports often involve unmanned dummy barges, for which 
   caption: [Human response to vessel motions],
 ) <hrvm>
 
-One way to manage this is by optimising (static) metacentric height, #smallcaps[gm], by keeping it sufficiently high from greater initial stability considerations --- but not excessively high, to warrant low periods of motion. This would not only reduce dynamic accelerations, but also help improve human response, where essential.
+One way to manage this is by optimising (static) metacentric height, GM, by keeping it sufficiently high from greater initial stability considerations --- but not excessively high, to warrant low periods of motion. This would not only reduce dynamic accelerations, but also help improve human response, where essential.
 
 == Effect of cargo position on inertia forces
 

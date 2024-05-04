@@ -1,4 +1,4 @@
-#import "inc/_template.typ": *
+#import "/inc/_template.typ": *
 #let mytitle = [worknotes]
 #show: book.with(
   title: mytitle,
@@ -23,6 +23,7 @@
   title: [List of Tables],
   target: figure.where(kind: table),
 )
+
 // Abbreviations (fix to indenting bug yet to be released)
 #include "/inc/abbreviations.typ"
 
