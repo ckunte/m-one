@@ -8,7 +8,7 @@
 
     This open-sourced book is a collection of the author's worknotes + code published originally on #link("https://ckunte.net")[ckunte.net] c. 2010--24. Its source and compilation may be downloaded from the repository #link("https://github.com/ckunte/wn")[github.com/ckunte/wn].
 
-    The author welcomes feedback at #link("mailto:me@ckunte.net")[me\@ckunte.net]
+    The author welcomes feedback at #link("https://github.com/ckunte/worknotes/issues")[worknotes:issues] page.
 
     $ * $
 
