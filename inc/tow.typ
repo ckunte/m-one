@@ -1,6 +1,6 @@
 = Tow
 
-When asked to compare the severity of sea-transportation between the _North Sea#footnote[GL Noble Denton, Technical Policy Board --- Table 7-2 (Unrestricted, Case 2), Default Motion Criteria, _Guidelines for Marine Transportations_, Document No. 0030/ND.]_ and the _South China Sea_, most engineers side with the former, which they deduce from comparing sea-states. So, it is rare to not get a blank stare from people when I say they may not be right. Here is why. Let us take a look at practised barge motion design criteria in each, see @mot. 
+When asked to compare the severity of sea-transportation between the _North Sea_ @nd30 and the _South China Sea_, most engineers side with the former, which they deduce from comparing sea-states. So it is rare to not get a blank stare from people when I say they may not be right. Here is why. Let us take a look at practised barge motion design criteria in each, see @mot. 
 
 #figure(
     table(
@@ -69,7 +69,7 @@ where,
 - $G M_T$, $G M_L$: metacentric height in transverse and longitudinal directions respectively
 - $m_a_r$, $m_a_p$, $m_a_h$: added masses
 
-There is a reason full (motion) periods are engineered for manned vessels, which is to make motions humanely _tolerable_ as the graph in @hrvm shows.#footnote[Journee and Pinkster, _Introduction to Ship Hydromechanics_.]
+There is a reason full (motion) periods are engineered for manned vessels, which is to make motions humanely _tolerable_ as the graph in @hrvm shows.@sh
 
 The boundary of depression and intolerable ranges can occur for very low accelerations, if periods are too low. Whereas a combination of acceleration and its corresponding average frequency of oscillation determines the level of comfort aboard.
 
@@ -87,28 +87,26 @@ One way to manage this is by optimising (static) metacentric height, GM, by keep
 The effect of cargo position on sea-transport forces in unrestricted open-seas (in terms of _W_, which is the dry weight of cargo)for all vessel types described in 0030/ND is shown in @lv, @mv, @sb, and @sv.
 
 #figure(
-  image("/img/tow_lvessels.png", width: 90%),
+  image("/img/tow_lvessels.png", width: 75%),
   caption: [Large vessels],
 ) <lv>
 
 #figure(
-  image("/img/tow_mvessels.png", width: 90%),
+  image("/img/tow_mvessels.png", width: 75%),
   caption: [Medium vessels and large cargo barges],
 ) <mv>
 
 #figure(
-  image("/img/tow_sbarges.png", width: 90%),
+  image("/img/tow_sbarges.png", width: 75%),
   caption: [Small barges],
 ) <sb>
 
 #figure(
-  image("/img/tow_svessels.png", width: 90%),
+  image("/img/tow_svessels.png", width: 75%),
   caption: [Small vessels],
 ) <sv>
 
 where, $L_x$, $L_y$, and $L_z$ are are distances between barge centre of rotation and cargo centre of gravity in x (along barge length), y (along barge width), and z (vertical) respectively.
-
-#pagebreak(weak: true)
 
 The plot script for all standard vessel types, described in 0030/ND is as follows.
 

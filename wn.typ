@@ -1,34 +1,33 @@
 #import "/inc/_template.typ": *
-#let mytitle = [worknotes]
 #show: book.with(
-  title: mytitle,
+  title: [Worknotes],
   author: "C Kunte",
-  dedication: [for Aaryana _&_ Saanvi],
+  dedication: [_for my daughters_],
   publishing-info: [
     #include("/inc/_pub.typ")
   ],
 )
+
+// preface
+#include "/inc/_preface.typ"
 
 #outline(
   indent: 1em, 
   depth: 2
 )
 
-#outline(
-  title: [List of Figures],
-  target: figure.where(kind: image),
-)
+// #outline(
+//   title: [List of Figures],
+//   target: figure.where(kind: image),
+// )
+//
+// #outline(
+//   title: [List of Tables],
+//   target: figure.where(kind: table),
+// )
 
-#outline(
-  title: [List of Tables],
-  target: figure.where(kind: table),
-)
-
-// Abbreviations (fix to indenting bug yet to be released)
-#include "/inc/abbreviations.typ"
-
-// preface
-#include "/inc/_preface.typ"
+// abbreviations
+#include "/inc/abbr.typ"
 
 // sea-transport and inertia
 #include "/inc/tow.typ"
@@ -65,3 +64,5 @@
 #include "/inc/model.typ"
 
 #pagebreak()
+
+#bibliography("/inc/ref.bib")

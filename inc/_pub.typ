@@ -2,13 +2,13 @@
       image("/img/apple-touch-icon-orig.png", width: 9%),
     )
 
-    *worknotes*
+    *Worknotes*
 
-    First (draft) Edition #datetime.today().display("[year]")
+    First (draft) edition #datetime.today().display("[year]")
 
-    This open-sourced book is a collection of the author's worknotes + code published originally on #link("https://ckunte.net")[ckunte.net] c. 2010--24. Its source and compilation may be downloaded from the repository #link("https://github.com/ckunte/wn")[github.com/ckunte/wn].
+    This open-sourced book is a collection of the author's worknotes published originally on my website c. 2010--24. Its source and compilation may be downloaded from the repository at #link("https://github.com/ckunte/worknotes")[github.com/ckunte/worknotes].
 
-    The author welcomes feedback at #link("https://github.com/ckunte/worknotes/issues")[worknotes:issues] page.
+    Feedback is welcome at the #link("https://github.com/ckunte/worknotes/issues")[worknotes:issues] page.
 
     $ * $
 

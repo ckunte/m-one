@@ -22,8 +22,6 @@ In the second, I nail down a motion set (e.g., large barge criteria, but can be 
   ],
 ) <u2>
 
-#pagebreak(weak: true)
-
 Code for @u1 is as follows. 
 
 #let ptow = read("/src/ptow.py")

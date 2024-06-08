@@ -19,7 +19,7 @@ Plot code to generate @iw is as follows.
 == Probability density function
 
 #figure(
-  image("/img/pdf.svg", width: 88%),
+  image("/img/pdf.svg", width: 100%),
   caption: [Probability density function]
 ) <p1>
 

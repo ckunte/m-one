@@ -25,8 +25,6 @@ The reduction of _Um_ in the first equation is notable, see Figure below. For ex
    ]
 ) <cf1>
 
-#pagebreak(weak: true)
-
 #let cosint = read("/src/cosint.py")
 #{linebreak();raw(cosint, lang: "python")}
 

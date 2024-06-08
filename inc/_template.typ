@@ -25,7 +25,7 @@
 
   // Set the body font
   set text(
-    font: "New Computer Modern", // Source serif Pro
+    font: "New Computer Modern", // New Computer Modern
     top-edge: "cap-height", 
     bottom-edge: "baseline",
     number-type: "old-style",
@@ -34,16 +34,18 @@
   // raw text / code
   show raw: set text(size: 7.5pt)
 
-  // Small caps
-  show regex("([A-Z]{2,})"): sc => {
-    smallcaps(lower(sc))
-  }   
-
   // Table caption
   show figure.where(
     kind: table
   ): set figure.caption(position: top)
   
+  // Table stroke and row height
+  set table(
+    stroke: none,
+    row-gutter: -0.5em
+  )
+
+
   // Emphasise caption
   show figure.caption: emph
 
@@ -59,6 +61,11 @@
     paper: paper,
     margin: (bottom: 1.75cm, top: 2.25cm),
   )
+
+  //// smallcaps
+  //show regex("[A-Z]{2,}"): match => {
+  //  smallcaps(lower(match))
+  //}
 
   // The first page.
   page(align(center + horizon)[
@@ -134,7 +141,7 @@
     text(2em, weight: 700, block([#number #it.body]))
     v(1.25em)
   }
-  show heading: set text(11pt, weight: 600)
+  show heading: set text(10pt, weight: 600)
 
   body
 }

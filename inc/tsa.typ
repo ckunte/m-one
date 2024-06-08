@@ -3,7 +3,7 @@
 During a project schedule review a year ago, citing past experience, I was asked this following:
 
 #quote()[
-  Would the design for pile fatigue warrant applying TSA to pile welds? Any delay in realising this requirement, especially late in fabrication has the potential to adversely affect project schedule.
+  _Would the design for pile fatigue warrant applying TSA to pile welds? Any delay in realising this requirement, especially late in fabrication has the potential to adversely affect project schedule._
 ]
 
 Failing to comprehend, I sought clarification --- for reasons I will get-to in a minute. But first some basics --- to appreciate the complexity of this question, and the rationale behind the response I offered. 
@@ -16,7 +16,7 @@ Aluminium can also be used as surface coating by hot-spraying over steel substra
 
 Going back to the question, my inability to grasp what was asked was simply this: what has surface coating, meant for protection against corrosion, got to do with fatigue? Upon asking I received this following feedback from engineers familiar with the case:
 
-#quote()[We originally specified TSA coating for the piles so that non-seawater S-N curves could be used for the fatigue analysis of the pile girth welds, etc. (Welds are exposed to seawater with no CP during driving.) In the end this requirement was waived and no TSA coating was applied.]
+#quote()[_We originally specified TSA coating for the piles so that non-seawater S-N curves could be used for the fatigue analysis of the pile girth welds, etc. (Welds are exposed to seawater with no CP during driving.) In the end this requirement was waived and no TSA coating was applied._]
 
 This was so telling that it blew my mind. It suggested that here was a team years ago trying to hack together a solution for a problem they presumably faced, but perhaps without sufficiently understanding corrosion or fatigue (as a phenomenon) or TSA (as a potential solution). 
 
@@ -42,11 +42,7 @@ It is also possible that the team was looking for S-N curves for seawater withou
 
 Either way, the team appeared to have a fatigue problem in pile girth welds, and the available stress-cycle curves were not helping in improving design life. This may have led the team to consider non-seawater S-N curves, if they could somehow insulate the joint from seawater --- the surrounding medium.
 
-I am certain that the non-seawater S-N curves were never meant to be used this way, and that the authors of international standards would be suitably shocked if they were made aware of such a use case. But even if we consider this debatable in the vein that unusual circumstances demand unusual methods and therefore merit justification, I am here to say that there are technical reasons why this perceived solution offers neither value nor the desired outcome. To illustrate why, let me first plot S-N curves for tubular joints, since a foundation pile is essentially a tube. Here, I will use the recipe from the ISO 19902:2007 standard, but other standards can be considered too, if required.
-
-Comparing the two curves in @tj, it is clear that there is not a lot of value here (20--40MPa relief in hotspot stresses) to take the trouble of insulating welds from seawater. I am also here to say that TSA can never offer the sort of insulation, which the team thought it would provide, for two reasons, (a) TSA is a thin-film surface coating whose thickness rarely exceeds 150$mu$ to be effective in adhesion. By virtue of its thickness (or lack thereof) and due to the method of application (i.e., hot metal spraying), the resulting coating is not only porous, but that it requires filler material to cover these pores for it to be effective, and (b) surface roughness is an issue as mentioned earlier. (Welded surfaces are rough unless ground smooth.)
-
-So if this solution isn't a solution at all, and fatigue concerns persisted but were realised very late, then what could be done? Well, there are at least a couple of solutions to improve fatigue life of joints. They are by (a) weld geometry improvement methods (e.g., grinding), and (b) residual stress methods (e.g., peening) with increasing effectiveness. UIT peening#footnote[UIT Peening is a cold remoulding of steel / weld by applying uniform stress-relieving controlled blows over the entire welded surface with an ultrasonic hand held gun.] for example is known to improve fatigue life by a factor of four (4). See Table 16.16-1, ISO 19902:2007, and Chapter 6 in _Fatigue Handbook_, A. Almar Naess.
+I am certain that the non-seawater S-N curves were never meant to be used this way, and that the authors of international standards would be suitably shocked if they were made aware of such a use case. But even if we consider this debatable in the vein that unusual circumstances demand unusual methods and therefore merit justification, I am here to say that there are technical reasons why this perceived solution offers neither value nor the desired outcome. To illustrate why, let me first plot S-N curves for tubular joints, since a foundation pile is essentially a tube. Here, I will use the recipe from the ISO 19902 standard @iso19902, but other standards can be considered too, if required.
 
 #figure(
   image("/img/sncurves-tj.svg", width: 100%),
@@ -54,6 +50,10 @@ So if this solution isn't a solution at all, and fatigue concerns persisted but 
     S-N curves for tubular joints in air and in seawater
     ]
 ) <tj>
+
+Comparing the two curves in @tj, it is clear that there is not a lot of value here (20--40MPa relief in hotspot stresses) to take the trouble of insulating welds from seawater. I am also here to say that TSA can never offer the sort of insulation, which the team thought it would provide, for two reasons, (a) TSA is a thin-film surface coating whose thickness rarely exceeds 150$mu$ to be effective in adhesion. By virtue of its thickness (or lack thereof) and due to the method of application (i.e., hot metal spraying), the resulting coating is not only porous, but that it requires filler material to cover these pores for it to be effective, and (b) surface roughness is an issue as mentioned earlier. (Welded surfaces are rough unless ground smooth.)
+
+So if this solution isn't a solution at all, and fatigue concerns persisted but were realised very late, then what could be done? Well, there are at least a couple of solutions to improve fatigue life of joints. They are by (a) weld geometry improvement methods (e.g., grinding), and (b) residual stress methods (e.g., peening) with increasing effectiveness. UIT peening#footnote[UIT Peening is a cold remoulding of steel / weld by applying uniform stress-relieving controlled blows over the entire welded surface with an ultrasonic hand held gun.] for example is known to improve fatigue life by a factor of four (4). See Table 16.16-1, ISO 19902:2007, and Chapter 6 in _Fatigue Handbook_ @fh.
 
 In summary, (a) the threat of corrosion fatigue is one of longer term, and it is unlikely to eventuate during installation, since the duration of installation is too short compared to the rate of corrosion. Once the pile is in the ground, electro-chemical oxidation is significantly reduced from continuing at the aforementioned corrosion rates --- due to limited dissolved oxygen available within the submerged soil. Piles are also CP protected once in the ground through metal to metal contact between substructure and pile(s) for which S-N curves in seawater with CP protection would be applicable; (b) a lot of data in standards is based on research and experimental results, and so using factors and coefficients, derived for one medium, for a completely different medium can have unintended consequences --- depending upon the severity of the problem; (c) attempt to insulate welded joints subsea from seawater using TSA is not a good idea, because TSA is a thin-film porous surface coating whose quality and climate control demands are very high to be effective in cost, functionality, and be schedule-friendly.
 

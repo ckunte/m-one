@@ -14,7 +14,7 @@ Every time I tried modifying the geometry of the existing model, I found the hig
 On building a model, Dr Holmas once said to me:
 
 #quote()[
-  Build your computer model like you would build a scaled physical model with details relevant and sufficient (no less and no more) to undertake model testing. 
+  _Build your computer model like you would build a scaled physical model with details relevant and sufficient (no less and no more) to undertake model testing._
 ]
 
 It's common sense, of course, but in reality give man a sophisticated piece of software only to watch him get himself entangled in complexity. People build the most complex models even when all they need is a simple one. That said, it is hard not to empathise with teams that work under tremendous time pressures, and there are no credits for creating task-specific models. Instead, teams build one that can be used and re-purposed for performing a series of tasks.
