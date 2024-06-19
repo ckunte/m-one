@@ -98,7 +98,7 @@ def main():
         pgr()
         misc()
     else:
-        print "No option was selected. For help, try: python ves.py -h"
+        print("No option was selected. For help, try: python ves.py -h")
     pass
 
 if __name__ == '__main__':
