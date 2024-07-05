@@ -2,7 +2,7 @@
       image("/img/apple-touch-icon-orig.png", width: 9%),
     )
 
-    *Worknotes*
+    WORKNOTES
 
     First (draft) edition #datetime.today().display("[year]")
 

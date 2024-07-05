@@ -1,6 +1,6 @@
 #import "/inc/_template.typ": *
 #show: book.with(
-  title: [Worknotes],
+  title: [WORKNOTES],
   author: "C Kunte",
   dedication: [_for my daughters_],
   publishing-info: [

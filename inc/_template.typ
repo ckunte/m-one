@@ -25,11 +25,11 @@
 
   // Set the body font
   set text(
-    font: "New Computer Modern", // New Computer Modern
+    // font: "New Computer Modern", // New Computer Modern
     top-edge: "cap-height", 
     bottom-edge: "baseline",
     number-type: "old-style",
-    // size: 10pt // 11pt is default
+    // size: 12pt // 11pt is default
     )
   // raw text / code
   show raw: set text(size: 7.5pt)
@@ -62,6 +62,11 @@
     margin: (bottom: 1.75cm, top: 2.25cm),
   )
 
+  // small caps
+  let sc(content) = text(features: ("c2sc",))[#content]
+  show regex("[A-Z]{2,}"): match => {
+    sc(match)
+  }
   //// smallcaps
   //show regex("[A-Z]{2,}"): match => {
   //  smallcaps(lower(match))
