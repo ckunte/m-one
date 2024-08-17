@@ -1,6 +1,6 @@
 #import "/inc/_template.typ": *
 #show: book.with(
-  title: [WORKNOTES],
+  title: [m-one],
   author: "C Kunte",
   dedication: [_for my daughters_],
   publishing-info: [
@@ -13,7 +13,7 @@
 
 #outline(
   indent: 1em, 
-  depth: 2
+  depth: 1
 )
 
 // #outline(

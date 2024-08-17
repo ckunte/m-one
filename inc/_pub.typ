@@ -2,13 +2,13 @@
       image("/img/apple-touch-icon-orig.png", width: 9%),
     )
 
-    WORKNOTES
+    m-one
 
     First (draft) edition #datetime.today().display("[year]")
 
-    This open-sourced book is a collection of the author's worknotes published originally on my website c. 2010--24. Its source and compilation may be downloaded from the repository at #link("https://github.com/ckunte/worknotes")[github.com/ckunte/worknotes].
+    m-one is a monograph authored between c. 2010--24. Its source and compilation may be downloaded from the repository at #link("https://github.com/ckunte/m-one")[github.com/ckunte/m-one].
 
-    Feedback is welcome at the #link("https://github.com/ckunte/worknotes/issues")[worknotes:issues] page.
+    Feedback is welcome at the #link("https://github.com/ckunte/m-one/issues")[m-one:issues] page.
 
     $ * $
 

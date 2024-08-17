@@ -25,7 +25,7 @@
 
   // Set the body font
   set text(
-    // font: "New Computer Modern", // New Computer Modern
+    font: "New Computer Modern", // New Computer Modern
     top-edge: "cap-height", 
     bottom-edge: "baseline",
     number-type: "old-style",
