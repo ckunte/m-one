@@ -9,4 +9,4 @@ This monograph is a collection of notes from my experience in engineering offsho
 I hope you find it useful.
 
 #h(1fr) _C Kunte_\
-#h(1fr) _#datetime.today().display("[year]")_
+#h(1fr) _Perth, #datetime.today().display("[year]")_
