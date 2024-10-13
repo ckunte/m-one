@@ -69,7 +69,7 @@ where,
 - $G M_T$, $G M_L$: metacentric height in transverse and longitudinal directions respectively
 - $m_a_r$, $m_a_p$, $m_a_h$: added masses
 
-There is a reason full (motion) periods are engineered for manned vessels, which is to make motions humanely _tolerable_ as the graph in @hrvm shows.@sh
+There is a reason full (motion) periods are engineered for manned vessels, which is to make motions humanely _tolerable_ as the graph in @hrvm shows.@journee_mt519
 
 The boundary of depression and intolerable ranges can occur for very low accelerations, if periods are too low. Whereas a combination of acceleration and its corresponding average frequency of oscillation determines the level of comfort aboard.
 
@@ -84,7 +84,7 @@ One way to manage this is by optimising (static) metacentric height, GM, by keep
 
 == Effect of cargo position on inertia forces
 
-The effect of cargo position on sea-transport forces in unrestricted open-seas (in terms of _W_, which is the dry weight of cargo)for all vessel types described in 0030/ND is shown in @lv, @mv, @sb, and @sv.
+The effect of cargo position on sea-transport forces in unrestricted open-seas (in terms of _W_, which is the dry weight of cargo)for all vessel types described in 0030/ND@nd30 is shown in @lv, @mv, @sb, and @sv.
 
 #figure(
   image("/img/tow_lvessels.png", width: 75%),

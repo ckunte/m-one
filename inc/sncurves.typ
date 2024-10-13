@@ -9,7 +9,7 @@ In order to set a suitable design criteria, I am looking to compare two classes 
   ]
 ) <snci>
 
-The basic S-N curve equation is as follows, which one may know is from Paris-Erdogan law (fracture mechanics):
+The basic S-N curve equation is as follows, which one may know is from Paris-Erdogan law (fracture mechanics)@paris_erdogan:
 
 #figure(
   image("/img/sncurves-table.png", width: 100%),

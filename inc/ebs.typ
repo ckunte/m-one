@@ -5,7 +5,7 @@ I have been evaluating the size of flotation tanks needed to install a large jac
 #figure(
   image("/img/lfE_6000x20.svg", width: 93%),
   caption: [
-      Effect of ring frame spacing (l) on the buckling strength of a flotation tank, based on DNVGL-RP-C202
+      Effect of ring frame spacing (l) on the buckling strength of a flotation tank, based on DNVGL-RP-C202@dnvgl_rp_c202
   ]
 ) <lfe>
 

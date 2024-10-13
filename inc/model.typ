@@ -7,7 +7,7 @@
   ]
 ) <model>
 
-A few months ago, I found the need to rebuild a complex finite element model of a jacket substructure. This was after exhausting the option of modifying one built by an agency. I needed to shift two of jacket's horizontal frames in the water column, and move to re-align all associated frames and elements. Thereafter port the model to USFOS error-free, re-code loads, hydrodynamic properties, marine growth, and re-attach foundation model before proceeding to perform a series of non-linear progressive collapse analyses.
+A few months ago, I found the need to rebuild a complex finite element model of a jacket substructure. This was after exhausting the option of modifying one built by an agency. I needed to shift two of jacket's horizontal frames in the water column, and move to re-align all associated frames and elements. Thereafter port the model to USFOS@holmas_usfos_theory error-free, re-code loads, hydrodynamic properties, marine growth, and re-attach foundation model before proceeding to perform a series of non-linear progressive collapse analyses.
 
 Every time I tried modifying the geometry of the existing model, I found the highly fragmented launch truss in my way. The more I tried changing it, the more I found it exhausting and frustrating. But I dreaded building one from scratch more. For one, the existing model was built by a team of engineers, had undergone rigorous quality control, and was the foundation upon which an entire phase of the project was engineered. In other words, I was not sure I'd do any better than this team. And two, it's been years since I built one from ground up, and so it was going to test my rusty skills, and it would hammer my confidence if I failed.
 

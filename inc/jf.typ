@@ -34,9 +34,9 @@ $ v = mu sqrt(2 g h) $
 
 where, $mu$ is the frictional coefficient of the orifice (hole) edge, _g_ is the acceleration due to gravity (in $m/s^2$), and _h_ is the hydrostatic head (in m).
 
-Unbeknownst to me, it seems this was a problem that was explored by Naval Architects --- bless this community of hard-working engineers, who unfailingly punch well above their weights --- as far back in 1991 in the context of stability of sailing vessels. The theory,#footnote[B. Deakin, The development of stability standards for UK sailing vessels, The Naval Architect, The Royal Institution of Naval Architects, London, 1991.] underpinned by hydraulics, checks-out of course.
+Unbeknownst to me, it seems this was a problem that was explored by Naval Architects --- bless this community of hard-working engineers, who unfailingly punch well above their weights --- as far back in 1991 in the context of stability of sailing vessels. The theory@deakin_1991, underpinned by hydraulics, checks-out of course.
 
-An approach similar to this in managing risk was applied to Liwan 3-1 the largest fixed jacket in the Asia-Pacific region,#footnote[C. Yu, et al., Design and operation considerations for large jacket installations in South China Sea, Proceedings of the Twenty-third (2013) International Offshore and Polar Engineering Conference, Alaska, USA, 2013.] which together with the success of North Rankin B continues to inspire engineers like myself looking to overcome challenges similar or greater than the ones experienced by such projects.
+An approach similar to this in managing risk was applied to Liwan 3-1 the largest fixed jacket in the Asia-Pacific region@yu_2013, which together with the success of North Rankin B continues to inspire engineers like myself looking to overcome challenges similar or greater than the ones experienced by such projects.
 
 Here is an example of a problem I've been working recently on.
 
@@ -48,6 +48,8 @@ Here is an example of a problem I've been working recently on.
 #let jf = read("/src/jf.py")
 #{linebreak();raw(jf, lang: "python")}
 
-This is a stop-gap assessment, of course, and by itself it is never sufficient. (Ideally, a full blown time-domain analysis is recommended to pre-determine the time available.) Aside from testing the flooding system, supplemented by control and auxiliary features, one needs to at least ensure that flood-able compartments are divided into controllable volumes to be able to limit accidental flooding exposure to have any degree of control.#footnote[This may not be practical for pile through leg jackets.]
+#v(1em)
+
+/ Important Note: This is a stop-gap assessment, of course, and by itself it is never sufficient. (Ideally, a full blown time-domain analysis is recommended to pre-determine the time available.) Aside from testing the flooding system, supplemented by control and auxiliary features, one needs to at least ensure that flood-able compartments are divided into controllable volumes to be able to limit accidental flooding exposure to have any degree of control.#footnote[This may not be practical for pile through leg jackets.]
 
 $ - * - $

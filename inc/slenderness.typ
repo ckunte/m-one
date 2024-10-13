@@ -9,7 +9,7 @@ During a pushover simulation last week, the jacket kept struggling at the set lo
 
 When these braces, directly in the line of attack, continued to struggle --- exhibiting excessive displacements in the revised model configuration causing negative matrix errors, I had to re-check their slenderness, even if they did not seem slender at all. 
 
-So back to basics. The criteria for a ductile design, recommended by $section$11.4, ISO 19902 is as follows:
+So back to basics. The criteria for a ductile design, recommended by $section$11.4, ISO 19902@iso19902_2020 is as follows:
 
 $ K L / r lt.eq 80 $
 

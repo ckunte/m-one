@@ -2,7 +2,7 @@
 
 Jacket resting on its bottom remains exposed to oncoming waves in its pre and partially piled states during installation. In these states, it is susceptible to sliding and overturning from environmental actions. It is deemed storm-safe when secured with sufficient number of piles to withstand installation wave environment.
 
-There is a prevalent practice in the industry where jackets on-bottom are commonly assessed for stability by applying 1-year return period environment. This is because piling in well-understood soils takes days (not weeks or months) to complete. As a result, the probability (p) of encountering a design wave within piling duration is sufficiently low. 
+There is a prevalent practice in the industry where jackets on-bottom are commonly assessed for stability by applying 1-year return period environment. This is because piling in well-understood soils takes days (not weeks or months) to complete. As a result, the probability (p) of encountering a design wave@faltinsen_1990 within piling duration is sufficiently low. 
 
 The probability of encountering a design wave during piling is given by:
 
@@ -24,7 +24,7 @@ We experienced this issue first-hand in 2019, as our piling durations were expec
   ],
 ) <pew>
 
-#pagebreak(weak: true)
+#v(1em)
 
 #let stormsafety = read("/src/stormsafety.py")
 #{linebreak();raw(stormsafety, lang: "python")}

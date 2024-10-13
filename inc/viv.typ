@@ -1,10 +1,10 @@
 = Vortex induced vibration
 
-Effects of vortex shedding can be problematic for slender structural members. Shedding frequencies and their interactions, together with other hydrodynamic quantities (e.g. (a) added mass and damping, (b) Reynolds number, (c) lift coefficient and (d) correlation of force components) have the potential to impair. 
+Effects of vortex shedding@williamson_1996 can be problematic for slender structural members. Shedding frequencies and their interactions, together with other hydrodynamic quantities (e.g. (a) added mass@blevins_1990 and damping@lamb_1932, (b) Reynolds number@reynolds_1883, (c) lift coefficient@white_2011 and (d) correlation of force components) have the potential to impair. 
 
 Given that vortex induced vibration (VIV) continues to be an area of contemporary research, the slender elements are commonly engineered to prevent VIV, and where unavoidable, countermeasures (VIV suppression devices e.g. strakes) are introduced.
 
-Following the industry recognised recommended practice, _DNVGL-RP-C205 -- Environmental conditions and environmental loads_, the _viv.py_ script below checks for the occurrence of VIV for a range of user-specified pipe sizes subjected to current(s) in the water column.
+Following the industry recognised recommended practice, _DNVGL-RP-C205 -- Environmental conditions and environmental loads_,@dnvgl_rp_c205 the _viv.py_ script below checks for the occurrence of VIV for a range of user-specified pipe sizes subjected to current(s) in the water column.
 
 #figure(
     table(
@@ -53,7 +53,7 @@ to:
 ```python
 plt.axhspan(3.0, 5.0, facecolor='orange', alpha=0.18)
 ```
-One may use the unix command `seq` to generate a range of diameters like so: `seq <initval> <incr> <endval>`. Here is an example:
+One may use the UNIX@ritchie_kernighan_1974 command seq@gnu_seq to generate a range of diameters like so: `seq <initval> <incr> <endval>`. Here is an example:
 
 ```bash
 $ seq 0.4064 0.0508 0.7620

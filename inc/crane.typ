@@ -1,6 +1,6 @@
 = Offshore crane
 
-API Spec 2C and EN 13852-1 are two well known standards that offer guidance in developing minimum offshore pedestal-mounted crane requirements. They represent Gulf of Mexico and the North Sea respectively.
+API Spec 2C@api_spec_2c and EN 13852-1@en_13852_1 are two well known standards that offer guidance in developing minimum offshore pedestal-mounted crane requirements. They represent Gulf of Mexico and the North Sea respectively.
 
 API specification considers Gulf of Mexico to be of "very mild sea and wind conditions" ($section$5.4.4 Legacy Dynamic Method). Environmental conditions in the Gulf of Mexico are indeed mild when hurricanes are excluded. Also, given the unpredictable variation in hurricane strengths and hence the impracticality of designing for such events, offshore facilities in the Gulf of Mexico are operated as _manned-evacuated_. In other words, operations (including crane operations) are suspended and the facility evacuated in the event of an impending hurricane in the facility's path.
 
@@ -91,7 +91,7 @@ Code for generating @cr1 is as follows.
 #let vhmin = read("/src/vhmin.py")
 #{linebreak();raw(vhmin, lang: "python")}
 
-IOGP specification S-618#footnote[IOGP S-618 Supplementary specification to API Specification 2C Offshore Pedestal-mounted Cranes.] issued in Dec 2018 now fixes the low velocity in API's off-board lift recipe, which stuck out like an anomaly#footnote[To be sure, my interest in API Spec 2C is now academic, and I am not judging it for its merits or demerits, since API's application domain is primarily the US. However, due to the fact that API standards are generally good to very good that the engineering community tends to adopt them across domains (outside USA) --- sometimes without pausing to consider whether or not cross-domain application is appropriate.], see plot above, and is now in step with that of EN 13852-1, which can be seen in the updated plot below.
+IOGP specification S-618@iogp_s618 issued in Dec 2018 now fixes the low velocity in API's off-board lift recipe, which stuck out like an anomaly#footnote[To be sure, my interest in API Spec 2C is now academic, and I am not judging it for its merits or demerits, since API's application domain is primarily the US. However, due to the fact that API standards are generally good to very good that the engineering community tends to adopt them across domains (outside USA) --- sometimes without pausing to consider whether or not cross-domain application is appropriate.], see plot above, and is now in step with that of EN 13852-1, which can be seen in the updated plot below.
 
 #figure(
   image("/img/vhmin_iogp.svg", width: 100%),

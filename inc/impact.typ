@@ -4,7 +4,7 @@ Last week I had an interesting problem to review at work: For a falling body thr
 
 I brought this up during a FaceTime call with my daughter at  university. She said she had written a paper in her pre-university IB diploma years entitled, _"Investigating the relationship between the radius of a body and terminal velocity"_, and emailed a copy. She used _honey_ as the medium, and determined the submerged mass of the falling body, honey's viscosity, et al. How cool is that?
 
-Back to the problem, one can find a wide variety of examples online using a spherical object, and you'd wonder why. It's because much of the theory is from [Stoke's Law][s]. For his experiments, George Stokes used a sphere as the falling body. Whereas my falling body was a pipe with open ends, and I had to calculate its drag force. While Stoke's Law itself is not directly applicable, since it uses properties of a sphere, the basic approach by Stokes for calculating the terminal velocity is still valid.
+Back to the problem, one can find a wide variety of examples online using a spherical object, and you'd wonder why. It's because much of the theory is from Stoke's Law@stokes_1851. For his experiments, George Stokes used a sphere as the falling body. Whereas my falling body was a pipe with open ends, and I had to calculate its drag force. While Stoke's Law itself is not directly applicable, since it uses properties of a sphere, the basic approach by Stokes for calculating the terminal velocity is still valid.
 
 == Impact energy
 

@@ -128,12 +128,12 @@ Extending the above concept to derive partial action factors and mean reserve st
 Quoting from my colleagues' article, published in Offshore Technology to describe LSM:
 
 #quote()[
-  In 1995, Tromans and Vanderschuren introduced the load statistics method (LSM), which uses asymptotic properties of extremes to calculate most probable maxima of the governing responses of a drag dominated (fixed) structure --- overturning moment and base shear. The method uses a simplified response model (i.e., a stick model), allowing the efficient and fast calculation of responses to each sea-state in a long-term hindcast database.
+  In 1995, Tromans and Vanderschuren introduced the load statistics method (LSM)@tromans_vanderschuren_2002, which uses asymptotic properties of extremes to calculate most probable maxima of the governing responses of a drag dominated (fixed) structure --- overturning moment and base shear. The method uses a simplified response model (i.e., a stick model), allowing the efficient and fast calculation of responses to each sea-state in a long-term hindcast database.
 
   This enabled analysts to calculate extreme waves, loads and response-based environmental design conditions in the North Sea. The method has been used extensively for the development of response-based design conditions and reliability assessments of fixed structures in the North Sea, Gulf of Mexico and the North-West Shelf of Australia.  
 ]
 
-The LSM tool (from a suite of Metocean tools within Shell) can produce base shears and overturning moments for extreme and abnormal return periods, from which $E_("rp")$ can be calculated. These formulations are from _$section$3.7 Typical Long Term Load Distributions, EP97-5050:_
+The LSM tool (from a suite of Metocean tools within Shell) can produce base shears and overturning moments for extreme and abnormal return periods, from which $E_("rp")$ can be calculated. These formulations are from _$section$3.7 Typical Long Term Load Distributions_, EP97-5050@shell_ep97_5050:
 
 $
 alpha = (E_("rp") / E_(100) - 1) / (log (r / 100)) \
