@@ -25,11 +25,11 @@
 
   // Set the body font
   set text(
-    // font: "New Computer Modern", // New Computer Modern
+    font: "erewhon", // New Computer Modern
     top-edge: "cap-height", 
     bottom-edge: "baseline",
     number-type: "old-style",
-    // size: 12pt // 11pt is default
+    size: 10pt
     )
   // raw text / code
   show raw: set text(size: 7.5pt)
@@ -59,7 +59,27 @@
   // Configure the page properties.
   set page(
     paper: paper,
+    numbering: "1",
     margin: (bottom: 1.75cm, top: 2.25cm),
+    header: context {
+      if calc.odd( counter(page).get().first() ) {
+        return smallcaps(title)
+      }
+      // Are we on a page that starts a chapter?
+      // We also check the previous page because
+      // headings contain pagebreaks
+      let i = here().page()
+      let all = query(heading)
+      if all.any( it => it.location().page() in (i - 1, i) ) {
+        return
+      }
+      // Find the heading of the section we are currently in
+      let before = query( selector(heading).before(here()) )
+      if before != () {
+        align(right, smallcaps(before.last().body))
+      }
+      set text(0.95em)
+    }, // context ends
   )
 
   // small caps
@@ -96,40 +116,15 @@
   pagebreak(to: "odd")
 
   // Configure paragraph properties.
-  set par(leading: 0.65em, first-line-indent: 12pt, justify: true)
-  show par: set block(spacing: 0.65em)
+  set par(
+    spacing: 0.65em, 
+    leading: 0.65em, 
+    first-line-indent: 12pt, 
+    justify: true
+  )
 
   // Start with a chapter outline.
   // outline(title: [Chapters])
-
-  // Configure page properties.
-  set page(
-    numbering: "1",
-
-    // The header always contains the book title on odd pages and
-    // the chapter title on even pages, unless the page is one
-    // the starts a chapter (the chapter title is obvious then).
-    header: locate(loc => {
-      // Are we on an odd page?
-      let i = counter(page).at(loc).first()
-      if calc.odd(i) {
-        return text(0.95em, smallcaps(title))
-      }
-
-      // Are we on a page that starts a chapter? (We also check
-      // the previous page because some headings contain pagebreaks.)
-      let all = query(heading, loc)
-      if all.any(it => it.location().page() in (i - 1, i)) {
-        return
-      }
-
-      // Find the heading of the section we are currently in.
-      let before = query(selector(heading).before(loc), loc)
-      if before != () {
-        align(right, text(0.95em, smallcaps(before.last().body)))
-      }
-    }),
-  )
 
   // Configure chapter headings.
   show heading.where(level: 1): it => {
