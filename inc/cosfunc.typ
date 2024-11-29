@@ -27,5 +27,3 @@ The reduction of _Um_ in the first equation is notable, see Figure below. For ex
 
 #let cosint = read("/src/cosint.py")
 #{linebreak();raw(cosint, lang: "python")}
-
-$ - * - $

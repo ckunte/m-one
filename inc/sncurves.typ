@@ -45,5 +45,3 @@ Code for plotting hotspot stresses versus number of cycles is as follows.
 
 + See #link("http://dx.doi.org/10.13140/RG.2.2.14995.20006")[ISO 19902 and DNV-RP-C203]
 + See #link("http://dx.doi.org/10.13140/RG.2.2.28416.97289")[BS 7608 and DNV-RP-C203]
-
-$ - * - $

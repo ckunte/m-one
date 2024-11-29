@@ -217,5 +217,3 @@ Plot code to generate $gamma_E$ and corresponding $R_m$ is as follows.
 
 #let rel_pra = read("/src/rel_pra.py")
 #{linebreak();raw(rel_pra, lang: "python")}
-
-$ - * - $

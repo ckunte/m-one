@@ -10,7 +10,7 @@
 
     Feedback is welcome at the #link("https://github.com/ckunte/m-one/issues")[m-one:issues] page.
 
-    $ * $
+    #v(1em)
 
     MIT License
 

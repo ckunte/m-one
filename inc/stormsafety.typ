@@ -28,5 +28,3 @@ We experienced this issue first-hand in 2019, as our piling durations were expec
 
 #let stormsafety = read("/src/stormsafety.py")
 #{linebreak();raw(stormsafety, lang: "python")}
-
-$ - * - $

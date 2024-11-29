@@ -31,5 +31,3 @@ Code for @u2 is as follows.
 
 #let ptow-ls = read("/src/ptow-ls.py")
 #{linebreak();raw(ptow-ls, lang: "python")}
-
-$ - * - $

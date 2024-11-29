@@ -64,5 +64,3 @@ For a problem I was reviewing, the plots look somewhat like these with code furn
 
 #let impact = read("/src/impact.py")
 #{linebreak();raw(impact, lang: "python")}
-
-$ - * - $

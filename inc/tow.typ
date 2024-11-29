@@ -117,5 +117,3 @@ For non-standard motion responses, particularly in benign environments that exhi
 
 #let ves_c = read("/src/ves_c.py")
 #{linebreak();raw(ves_c, lang: "python")}
-
-$ - * - $

@@ -32,5 +32,3 @@ Code for plotting performance curves of air block, floating pneumatic and cell f
 
 #let pcurves = read("/src/pcurves.py")
 #{linebreak();raw(pcurves, lang: "python")}
-
-$ - * - $

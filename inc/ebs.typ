@@ -13,5 +13,3 @@ For each of the eight hundred ring frame spacing variations, this little script 
 
 #let ebs = read("/src/ebs.py")
 #{linebreak();raw(ebs, lang: "python")}
-
-$ - * - $

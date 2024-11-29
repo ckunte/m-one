@@ -44,7 +44,14 @@
     stroke: none,
     row-gutter: -0.5em
   )
-
+  
+  // Equation numbers
+  set math.equation(numbering: "(1)")
+ 
+   // link properties
+  show cite: set text(fill: maroon)
+  
+  show link: underline
 
   // Emphasise caption
   show figure.caption: emph
@@ -91,6 +98,14 @@
   //show regex("[A-Z]{2,}"): match => {
   //  smallcaps(lower(match))
   //}
+
+  // line numbers for code
+  show raw.line: it => {
+    text(fill: gray)[#it.number]
+    h(1em)
+    it.body
+  }
+
 
   // The first page.
   page(align(center + horizon)[

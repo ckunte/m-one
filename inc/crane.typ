@@ -104,5 +104,3 @@ Code for generating @ci8 is as follows.
 
 #let vhmin_iogp = read("/src/vhmin_iogp.py")
 #{linebreak();raw(vhmin_iogp, lang: "python")}
-
-$ - * - $

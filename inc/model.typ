@@ -106,5 +106,3 @@ where,
 Any manual work demands time, and therefore it's a trade-off --- whether to hand-code coefficients or to model the entire geometry. Most time-constrained engineers tend to take the latter route, since it is easier to build geometry than it is to calculate coefficients for adjusted members in at least three directions.#footnote[Drag and inertia coefficients for various shapes are available in &sect;6.8 Hydrodynamic loading, in the seminal book, _Dynamics of Fixed Marine Structures_, Barltrop and Adams, Third Edition, 1991.]
 
 In summary, taking the road generally not taken was both fruitful and satisfying. I could produce comparable results with a substantially simpler model, while also marginally improving its reserve strength in certain directions. Sometimes all that matters is moving the needle a little bit --- in incremental and positive ways that is not only reassuring to the business, but also in building confidence.
-
-$ - * - $

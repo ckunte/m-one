@@ -63,6 +63,9 @@
 // model
 #include "/inc/model.typ"
 
+// handcalcs
+#include "/inc/ylt.typ"
+
 #pagebreak()
 
 #bibliography("/inc/ref.bib")

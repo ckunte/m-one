@@ -79,5 +79,3 @@ fyD/Et (NTE 0.069) = [0.051, 0.088, 0.098, 0.078]
 From above results, clearly the only member that is not considered slender is the one with size, 1,300$times$50$times$20,518. The last three tubes exhibit some form of slenderness --- mostly on account of length, and may warrant suitable resizing.
 
 The lambda is python's built-in anonymous function I use to power through lists, which should not be confused with $lambda$ -- the column buckling parameter, the latter corresponds to `lmbda` in the script --- note the intentional spelling change to avoid the built-in function clashing with the formula.
-
-$ - * - $

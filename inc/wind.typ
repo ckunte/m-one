@@ -41,5 +41,3 @@ Here is the code for these plots.
 
 #let enwind = read("/src/enwind.py")
 #{linebreak();raw(enwind, lang: "python")}
-
-$ - * - $

@@ -79,5 +79,3 @@ The code to generate @tj is as follows.
 
 #let tj_curve = read("/src/tj_curve.py")
 #{linebreak();raw(tj_curve, lang: "python")}
-
-$ - * - $

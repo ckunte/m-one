@@ -51,5 +51,3 @@ Here is an example of a problem I've been working recently on.
 #v(1em)
 
 / Important Note: This is a stop-gap assessment, of course, and by itself it is never sufficient. (Ideally, a full blown time-domain analysis is recommended to pre-determine the time available.) Aside from testing the flooding system, supplemented by control and auxiliary features, one needs to at least ensure that flood-able compartments are divided into controllable volumes to be able to limit accidental flooding exposure to have any degree of control.#footnote[This may not be practical for pile through leg jackets.]
-
-$ - * - $
