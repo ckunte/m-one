@@ -29,13 +29,13 @@ $ f_(x e) = 2 C_x E t / D $
 
 where, 
 
-- $lambda$ -- column buckling parameter
-- $C_x$ -- elastic critical buckling coefficient
-- D, t, _L_ -- tube size
-- E --  modulus of steel elasticity
-- $f_y$ -- yield strength of steel
-- $f_(y c)$ -- representative local buckling strength of steel
-- $f_(x e)$ -- representative elastic local buckling strength of steel
+/ $lambda$ : column buckling parameter
+/ $C_x$ : elastic critical buckling coefficient
+/ D, t, _L_ : tube size
+/ E :  modulus of steel elasticity
+/ $f_y$ : yield strength of steel
+/ $f_(y c)$ : representative local buckling strength of steel
+/ $f_(x e)$ : representative elastic local buckling strength of steel
 
 /*
 _Quick digression:_ While checking these above expressions for this note, I think I uncovered an error in the latest ISO 19902:2020 standard. Notice the conditional statements in equations 13.2-8 and 13.2-9 in the screenshot below. 
@@ -57,6 +57,7 @@ For a set of brace sizes (selecting one in each bay), the script lets me check t
 
 Producing the following:
 
+#v(1em)
 ```
 $ python3 sl.py
 fy (MPa)           = 400.0
@@ -75,6 +76,7 @@ lambda             = [0.457, 1.649, 1.695, 1.843]
 lambda (NTE)       = [1.125, 1.125, 1.125, 1.125]
 fyD/Et (NTE 0.069) = [0.051, 0.088, 0.098, 0.078]
 ```
+#v(1em)
 
 From above results, clearly the only member that is not considered slender is the one with size, 1,300$times$50$times$20,518. The last three tubes exhibit some form of slenderness --- mostly on account of length, and may warrant suitable resizing.
 

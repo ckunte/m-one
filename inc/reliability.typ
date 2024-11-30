@@ -35,12 +35,12 @@ $
 
 The (extreme) load frequency curve overlapping the strength curve represents the risk.
 
-The model is viewed as a situation in which the probabilities correspond to the worst loading case --- annual or lifetime, as appropriate. This overlap (i.e., probability of failure) would decrease if either (i) the mean margin of safety increases, or (ii) the uncertainty ($sigma$) in load or resistance reduces.
-
 #figure(
   image("/img/pf.jpg", width: 100%),
   caption: [Probability of failure curves (courtesy: API)]
 ) <apil>
+
+The model is viewed as a situation in which the probabilities correspond to the worst loading case --- annual or lifetime, as appropriate. This overlap (i.e., probability of failure) would decrease if either (i) the mean margin of safety increases, or (ii) the uncertainty ($sigma$) in load or resistance reduces.
 
 The analysis of reliability is carried out by defining a failure function, _g_, such that _g < 0_ denotes failure, or 
 
@@ -89,7 +89,7 @@ The LRFD method caught-on. Shell engineers extended the concept to numerous geog
 
 #figure(
     table(
-      columns: (1fr, 1fr, 1fr, 1fr, 1fr),
+      columns: (auto, auto, auto, auto, auto),
       inset: 10pt,
       align: horizon,
       [_Area_], [_MPM_], [_Mean_], [_COV ($sigma_E$)_], [_$V_E$_],
@@ -107,23 +107,17 @@ Once this was done, calibrating other locations to Gulf of Mexico safety level b
 
 For the target $P_f$ = 3E-5/y (which corresponds to $P_("f20")$ = 6E-4 "for 20 years"), $beta_(20)$ could be determined as equal to 3.239. Using this safety index, probability density function plots could be generated for all tabulated regions --- as I have done below.
 
-#figure(
-  image("/img/expcat-L1.png", width: 100%),
-  caption: [Probability density for exposure level L1 ($P_f$ = 3E-5/y)]
-) <l1>
-
 Also, using this new safety index and the table above, the ISO 19902 has tabulated the mean RSR (Rm) and $gamma_E$ for the Australian Northwest Shelf and the North Sea in A.9.9.3. 
 
 So, in a gist, that's the general theory to develop mean RSR and $gamma_E$, which could be applied to new locations, if $E_("mean")$ and $V_E$ could be determined from Metocean and Structural response studies like Shell did in the 90s for its NS and AU assets, and later for its Southeast Asian assets. Of course, statistically extending a dataset of one region's safety index entirely to another depends very much on how well the means and COVs are computed for the new region --- and in general feels both like a novel idea as well as a hack. But for our generation, this will do.
 
-#figure(
-  image("/img/expcat-L2.png", width: 100%),
-  caption: [Probability density for exposure level L2 ($P_f$ = 5E-4/y)]
-) <l2>
-
 == Partial action factors and reserve strength ratios
 
 Extending the above concept to derive partial action factors and mean reserve strength ratio appropriate to the probability of failure of interest, Shell engineers documented indicative constants to represent key environments.#footnote[Efthymiou, M., van de Graaf, J.W., _Reliability Based Design and Re-assessment of Fixed Steel Platforms_, EP97-5050, February 1997.]
+#figure(
+  image("/img/expcat-L1.png", width: 120%),
+  caption: [Probability density for exposure level L1 ($P_f$ = 3E-5/y)]
+) <l1>
 
 Quoting from my colleagues' article, published in Offshore Technology to describe LSM:
 
@@ -132,6 +126,11 @@ Quoting from my colleagues' article, published in Offshore Technology to describ
 
   This enabled analysts to calculate extreme waves, loads and response-based environmental design conditions in the North Sea. The method has been used extensively for the development of response-based design conditions and reliability assessments of fixed structures in the North Sea, Gulf of Mexico and the North-West Shelf of Australia.  
 ]
+
+#figure(
+  image("/img/expcat-L2.png", width: 120%),
+  caption: [Probability density for exposure level L2 ($P_f$ = 5E-4/y)]
+) <l2>
 
 The LSM tool (from a suite of Metocean tools within Shell) can produce base shears and overturning moments for extreme and abnormal return periods, from which $E_("rp")$ can be calculated. These formulations are from _$section$3.7 Typical Long Term Load Distributions_, EP97-5050@shell_ep97_5050:
 
@@ -193,14 +192,14 @@ The easiest way to use the above equation is to pick a range of RSR values in te
 One may notice some values in @rm that are either similar or close to those listed in $section$A.9.9.3.3, ISO 19902:2007.#footnote[Note, this section has been eliminated in the latest ISO 19902:2020 version.]
 
 #figure(
-  image("/img/pra-2.svg", width: 90%),
+  image("/img/pra-2.svg", width: 96%),
   caption: [
     Return period v. Reserve strength ratio
   ]
 ) <pr2>
 
 #figure(
-  image("/img/pra-1.svg", width: 90%),
+  image("/img/pra-1.svg", width: 96%),
   caption: [
     Return period v. Partial action factor
   ]

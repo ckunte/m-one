@@ -34,16 +34,16 @@ $ v = mu sqrt(2 g h) $
 
 where, $mu$ is the frictional coefficient of the orifice (hole) edge, _g_ is the acceleration due to gravity (in $m/s^2$), and _h_ is the hydrostatic head (in m).
 
-Unbeknownst to me, it seems this was a problem that was explored by Naval Architects --- bless this community of hard-working engineers, who unfailingly punch well above their weights --- as far back in 1991 in the context of stability of sailing vessels. The theory@deakin_1991, underpinned by hydraulics, checks-out of course.
-
-An approach similar to this in managing risk was applied to Liwan 3-1 the largest fixed jacket in the Asia-Pacific region@yu_2013, which together with the success of North Rankin B continues to inspire engineers like myself looking to overcome challenges similar or greater than the ones experienced by such projects.
-
 Here is an example of a problem I've been working recently on.
 
 #figure(
-  image("/img/Dvt.svg", width: 100%),
+  image("/img/Dvt.svg", width: 120%),
   caption: [Time taken to flood jacket components for a range of hole diameters],
 ) <dvt>
+
+Unbeknownst to me, it seems this was a problem that was explored by Naval Architects --- bless this community of hard-working engineers, who unfailingly punch well above their weights --- as far back in 1991 in the context of stability of sailing vessels. The theory@deakin_1991, underpinned by hydraulics, checks-out of course.
+
+An approach similar to this in managing risk was applied to Liwan 3-1 the largest fixed jacket in the Asia-Pacific region@yu_2013, which together with the success of North Rankin B continues to inspire engineers like myself looking to overcome challenges similar or greater than the ones experienced by such projects.
 
 #let jf = read("/src/jf.py")
 #{linebreak();raw(jf, lang: "python")}

@@ -56,7 +56,7 @@ $ v(t) = v_t tanh( (g t) / v_t ) $
 For a problem I was reviewing, the plots look somewhat like these with code furnished below for generating them.
 
 #figure(
-  image("/img/impact.png", width: 100%),
+  image("/img/impact.png", width: 120%),
   caption: [
     Time taken by the falling pipe through seawater versus the depth
   ]

@@ -26,9 +26,11 @@ Turning this above into code for a list of wave periods:
 
 #let wavelength = read("/src/wavelength.py")
 #{linebreak();raw(wavelength, lang: "python")}
+#v(1em)
 
 When run, it produces this:
 
+#v(1em)
 ```bash
 $ python3 wavelength.py
 Water depth: 171.18

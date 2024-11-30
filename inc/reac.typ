@@ -28,8 +28,6 @@ Matrices are now available in most modern computing software. Gaussian eliminati
 
 Following the classic recipe of solving linear equations ($A dot x = B$) for x, a column matrix of load factors, where $A$ is a square matrix of inertia loads --- corresponding to 1.0g, and $B$ is a column matrix of dynamic loads from catamaran's motion responses, I punched in the two arrays to see if I could get the same set of $x$. 
 
-#pagebreak(weak: true)
-
 Here's how simple it is with numpy.
 
 #v(1em)
@@ -61,9 +59,11 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+#v(1em)
 
 The output looks like below --- matching the result we'd obtained from Gaussian elimination method:
 
+#v(1em)
 ```bash
 $ python mat.py
 [[  0.16090823]

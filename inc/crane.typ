@@ -10,6 +10,11 @@ Take for instance the primary purpose of offshore cranes mounted on pedestals on
 
 Off-board lift, as API Spec 2C explains, is "the hoisting velocity at the elevation where lift is initiated (i.e., supply boat deck level) shall be fast enough to avoid re-contact after the load is lifted." 
 
+#figure(
+  image("/img/vhmin.svg", width: 100%),
+  caption: [Comparing minimum hoisting velocities between API Spec 2C and EN 13852-1]
+) <cr1>
+
 == Off-board lift using API Spec 2C
 
 Minimum required steady hoisting velocity (in ft/s) for off-board lift as per $section$5.4.5.2, API Spec 2C:
@@ -40,11 +45,6 @@ For crane on bottom-founded structures, there is no movement of the crane base, 
 
 I wrote a little code to compare the two standards over the weekend (see below) to produce the following graph.
 
-#figure(
-  image("/img/vhmin.svg", width: 100%),
-  caption: [Comparing minimum hoisting velocities between API Spec 2C and EN 13852-1]
-) <cr1>
-
 A couple of observations:
 
 + API prescription for $V_("hmin")$ covers supply vessels, while EN offers two additional options, viz., barge, and sea surface. (Graphs for barge or sea surface are not shown in the above, but can be separately generated, if desired.)
@@ -58,7 +58,7 @@ Testing API Spec 2C recipe for the Australian Northwest Shelf environment:
 
 #figure(
     table(
-      columns: (1fr, 1fr, 1fr, auto),
+      columns: (auto, auto, auto, auto),
       inset: 10pt,
       align: horizon,
       [$H_("sig")$], [_T_], [$V_("hmin")$], [h],
@@ -73,7 +73,7 @@ From @vcr1, clearly it does not work. In other words, a lifted package experienc
 
 #figure(
     table(
-      columns: (1fr, 1fr, 1fr, auto),
+      columns: (auto, auto, auto, auto),
       inset: 10pt,
       align: horizon,
       [$H_("sig")$], [_T_], [$V_("hmin")$], [h],
@@ -91,7 +91,7 @@ Code for generating @cr1 is as follows.
 #let vhmin = read("/src/vhmin.py")
 #{linebreak();raw(vhmin, lang: "python")}
 
-IOGP specification S-618@iogp_s618 issued in Dec 2018 now fixes the low velocity in API's off-board lift recipe, which stuck out like an anomaly#footnote[To be sure, my interest in API Spec 2C is now academic, and I am not judging it for its merits or demerits, since API's application domain is primarily the US. However, due to the fact that API standards are generally good to very good that the engineering community tends to adopt them across domains (outside USA) --- sometimes without pausing to consider whether or not cross-domain application is appropriate.], see plot above, and is now in step with that of EN 13852-1, which can be seen in the updated plot below.
+IOGP specification S-618@iogp_s618 issued in Dec 2018 now fixes the low velocity in API's off-board lift recipe, which stuck out like an anomaly#footnote[To be sure, my interest in API Spec 2C is now academic, and I am not judging it for its merits or demerits, since API's application domain is primarily the US. However, due to the fact that API standards are generally good to very good that the engineering community tends to adopt them across domains (outside USA) --- sometimes without pausing to consider whether or not cross-domain application is appropriate.], see plot above, and is now in step with that of EN 13852-1, which can be seen in the updated in @ci8.
 
 #figure(
   image("/img/vhmin_iogp.svg", width: 100%),
