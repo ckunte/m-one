@@ -38,6 +38,7 @@ Let's dive into understanding the problem to see if this was a credible threat f
 
 Corrosion fatigue is a long term phenomenon, since both corrosion and fatigue are, and it is exacerbated by surface roughness and surface temperature, among other things. Metal loss from corrosion in tropical to subtropical seawater temperatures typically ranging 0.2--0.4mm/year.#footnote[Heated surfaces amplify the rate of corrosion by up to ten times.] In other words, it takes years to eventuate. Whereas pile driving in soils (other than in calcarenite) can at worst take a couple of months to complete. The metal loss at the end of, say, three months can at worst be 0.1mm.
 
+#v(1em)
 ```python
 # Corrosion rate
 r = [0.2mm/year, 0.4mm/year]
@@ -48,6 +49,8 @@ mloss(t) = map((x * t) in mm, r)
 # For, say, a 3-month piling campaign
 mloss(3 month) => [0.05 mm, 0.1 mm]
 ```
+#v(1em)
+
 Fearing lack of cathodic protection during driving, and without realising the insignificant threat to pile weld integrity from low metal loss, the team truly believed in the unsubstantiated and therefore unrealistic threat of corrosion fatigue. 
 
 Alternatively, it may be that the performance of these girth welded joints in in-line fatigue were either never comforting to begin with or that it was realised too late --- I am speculating here, since the received feedback does not say. So it is possible that corrosion fatigue was used as a justification. In other words, fatigue may have been a problem all along, just not realistically attributable to corrosion-fatigue. 

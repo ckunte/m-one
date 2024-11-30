@@ -26,8 +26,10 @@ Code for @u1 is as follows.
 
 #let ptow = read("/src/ptow.py")
 #{linebreak();raw(ptow, lang: "python")}
+#v(1em)
 
 Code for @u2 is as follows.
 
+#v(1em)
 #let ptow-ls = read("/src/ptow-ls.py")
 #{linebreak();raw(ptow-ls, lang: "python")}

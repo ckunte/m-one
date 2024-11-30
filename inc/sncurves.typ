@@ -38,6 +38,7 @@ $ k_1 = 10^(12.18) $
 
 Code for plotting hotspot stresses versus number of cycles is as follows.
 
+#v(1em)
 #let sncurves = read("/src/sncurves.py")
 #{linebreak();raw(sncurves, lang: "python")}
 

@@ -16,8 +16,6 @@ Plot code to generate @iw is as follows.
 #let isowind = read("/src/isowind.py")
 #{linebreak();raw(isowind, lang: "python")}
 
-== Probability density function
-
 #figure(
   image("/img/pdf.svg", width: 100%),
   caption: [Probability density function]
@@ -28,12 +26,12 @@ Plot code to generate @p1 is as follows.
 #let wind_pdf = read("/src/wind_pdf.py")
 #{linebreak();raw(wind_pdf, lang: "python")}
 
-== Based on EN 1991-1-4:2005@en1991-1-4_2005
+== Based on EN 1991-1-4:2005
 
-The generic nature of EN's applicability makes for a complicated recipe. The number of things one needs to determine before one even gets to wind velocity is staggering. Here's a flavour of things that come with the territory.
+The generic nature of EN's@en1991-1-4_2005 applicability makes for a complicated recipe. The number of things one needs to determine before one even gets to wind velocity is staggering. Here's a flavour of things that come with the territory.
 
 #figure(
-  image("/img/enwind.png", width: 100%),
+  image("/img/enwind.png", width: 120%),
   caption: [PVP, RF, TI, TLS]
 ) <enw>
 

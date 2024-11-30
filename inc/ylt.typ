@@ -10,7 +10,7 @@ See @wpp for other parameters referenced in @Puf and @Pus.
 
 #figure(
   image("/img/ylt-legend.png", width: 67%),
-  caption: [Web plate parameters (courtesy: R.H. Kapp~@rhk)]
+  caption: [Web plate parameters (courtesy: R.H. Kapp)]
 ) <wpp>
 
 #pagebreak(weak:true)
@@ -18,13 +18,13 @@ See @wpp for other parameters referenced in @Puf and @Pus.
 / Sample problem: b = 64mm, c = 0mm, e = 64mm, and L = 110mm
 
 #figure(
-  image("/img/Pvt_fixed_ends.svg", width: 87%),
-  caption: [Min. web plate size (fixed ends) versus the total ultimate tension]
+  image("/img/Pvt_fixed_ends.svg", width: 86%),
+  caption: [$P_u$ versus $t_w$ (fixed ends)]
 ) <fpuf>
 
 #figure(
-  image("/img/Pvt_supported_ends.svg", width: 87%),
-  caption: [Min. web plate size (supported ends) versus the total ultimate tension]
+  image("/img/Pvt_supported_ends.svg", width: 86%),
+  caption: [$P_u$ versus $t_w$ (supported ends)]
 ) <fpus>
 
 #pagebreak(weak:true)

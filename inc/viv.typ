@@ -4,7 +4,7 @@ Effects of vortex shedding@williamson_1996 can be problematic for slender struct
 
 Given that vortex induced vibration (VIV) continues to be an area of contemporary research, the slender elements are commonly engineered to prevent VIV, and where unavoidable, countermeasures (VIV suppression devices e.g. strakes) are introduced.
 
-Following the industry recognised recommended practice, _DNVGL-RP-C205 -- Environmental conditions and environmental loads_,@dnvgl_rp_c205 the _viv.py_ script below checks for the occurrence of VIV for a range of user-specified pipe sizes subjected to current(s) in the water column.
+Following the industry recognised recommended practice, DNVGL-RP-C205@dnvgl_rp_c205 the _viv.py_ script below checks for the occurrence of VIV for a range of user-specified pipe sizes subjected to current(s) in the water column.
 
 #figure(
     table(
@@ -22,8 +22,8 @@ The script requires the following inputs (together with consistent units). These
 
 + Current velocity, v (m/s) --- typically for a 1-year environment
 + Marine growth thickness, tm (m)
-+ Flooding condition, f (`1` for flooded; `0` for buoyant)
-+ End (boundary) conditions of the pipe (fixed: `22.2`; clamped: `15.4`; simply-supported: `9.87`; cantilevered: `3.52`)
++ Flooding condition, f (1 for flooded; 2 for buoyant)
++ End (boundary) conditions of the pipe (fixed: 22.2; clamped: 15.4; simply-supported: 9.87; cantilevered: 3.52)
 
 #figure(
   image("/img/vivc.svg", width: 100%),
@@ -40,25 +40,38 @@ The way to read the above graph is pretty simple:
 
 Code for generating the plot shown in @vi2 is as follows.
 
+#v(1em)
 #let viv = read("/src/viv.py")
 #{linebreak();raw(viv, lang: "python")}
+#v(1em)
 
 While the upper limit for cross-flow VIV lock-in is 16 (according to RP-C205), the plot may be set to a lower maximum value of say 5.0 --- e.g. as done in the plot above to keep the curvatures of plots more readable (in `plt.axhspan()` in the script) as so. Change the following line:
 
+#v(1em)
 ```python
 plt.axhspan(3.0, 16.0, facecolor='orange', alpha=0.18)
 ```
+#v(1em)
+
 to:
 
+#v(1em)
 ```python
 plt.axhspan(3.0, 5.0, facecolor='orange', alpha=0.18)
 ```
+#v(1em)
+
 One may use the UNIX@ritchie_kernighan_1974 command seq@gnu_seq to generate a range of diameters like so: `seq <initval> <incr> <endval>`. Here is an example:
 
+#v(1em)
 ```bash
 $ seq 0.4064 0.0508 0.7620
 ```
+#v(1em)
+
 This generates:
+
+#v(1em)
 ```
 0.4064
 0.4572

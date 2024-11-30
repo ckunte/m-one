@@ -6,7 +6,7 @@ For background, dispersion relation#footnote[Dispersion relation (eq. 24), Wave 
 
 $ omega^2 / g = kappa tanh(kappa d) $
 
-When $lim_(arrow.r oo) tanh(k d) tilde.eq 1$, it reduces the expression to:
+When $lim_(d arrow.r oo) tanh(k d) tilde.eq 1$, it reduces the expression to:
 
 $ lambda = 2pi g / omega^2 $
 
@@ -26,9 +26,11 @@ Turning this above into code for a list of wave periods:
 
 #let wavelength = read("/src/wavelength.py")
 #{linebreak();raw(wavelength, lang: "python")}
+#v(1em)
 
 When run, it produces this:
 
+#v(1em)
 ```bash
 $ python3 wavelength.py
 Water depth: 171.18

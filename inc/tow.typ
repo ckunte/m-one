@@ -71,14 +71,14 @@ where,
 
 There is a reason full (motion) periods are engineered for manned vessels, which is to make motions humanely _tolerable_ as the graph in @hrvm shows.@journee_mt519
 
-The boundary of depression and intolerable ranges can occur for very low accelerations, if periods are too low. Whereas a combination of acceleration and its corresponding average frequency of oscillation determines the level of comfort aboard.
-
-However, marine cargo transports often involve unmanned dummy barges, for which human response is not seen as a governing requirement, and are therefore acceptable to operate at lower periods of motion. High dynamic acceleration is often a result of small period of motion, as seen in the case of _South China Sea_ pertaining to unmanned cargo barges.
-
 #figure(
   image("/img/tow_hra.png", width: 75%),
   caption: [Human response to vessel motions],
 ) <hrvm>
+
+The boundary of depression and intolerable ranges can occur for very low accelerations, if periods are too low. Whereas a combination of acceleration and its corresponding average frequency of oscillation determines the level of comfort aboard.
+
+However, marine cargo transports often involve unmanned dummy barges, for which human response is not seen as a governing requirement, and are therefore acceptable to operate at lower periods of motion. High dynamic acceleration is often a result of small period of motion, as seen in the case of _South China Sea_ pertaining to unmanned cargo barges.
 
 One way to manage this is by optimising (static) metacentric height, GM, by keeping it sufficiently high from greater initial stability considerations --- but not excessively high, to warrant low periods of motion. This would not only reduce dynamic accelerations, but also help improve human response, where essential.
 
@@ -87,31 +87,35 @@ One way to manage this is by optimising (static) metacentric height, GM, by keep
 The effect of cargo position on sea-transport forces in unrestricted open-seas (in terms of _W_, which is the dry weight of cargo)for all vessel types described in 0030/ND@nd30 is shown in @lv, @mv, @sb, and @sv.
 
 #figure(
-  image("/img/tow_lvessels.png", width: 75%),
+  image("/img/tow_lvessels.png", width: 90%),
   caption: [Large vessels],
 ) <lv>
 
 #figure(
-  image("/img/tow_mvessels.png", width: 75%),
+  image("/img/tow_mvessels.png", width: 90%),
   caption: [Medium vessels and large cargo barges],
 ) <mv>
 
 #figure(
-  image("/img/tow_sbarges.png", width: 75%),
+  image("/img/tow_sbarges.png", width: 90%),
   caption: [Small barges],
 ) <sb>
 
 #figure(
-  image("/img/tow_svessels.png", width: 75%),
+  image("/img/tow_svessels.png", width: 90%),
   caption: [Small vessels],
 ) <sv>
 
 where, $L_x$, $L_y$, and $L_z$ are are distances between barge centre of rotation and cargo centre of gravity in x (along barge length), y (along barge width), and z (vertical) respectively.
 
+== Standard vessel types
+
 The plot script for all standard vessel types, described in 0030/ND is as follows.
 
 #let ves = read("/src/ves.py")
 #{linebreak();raw(ves, lang: "python")}
+
+== Non-standard vessel types
 
 For non-standard motion responses, particularly in benign environments that exhibit lower single amplitude motion and lower full-cycle period, the following code could be used. It requires all values to be input.
 

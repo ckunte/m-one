@@ -10,8 +10,8 @@ $ p = 1 - e^(- L / T) $
 
 where, 
 
-- L -- piling duration
-- T -- return period of design wave
+/ L : piling duration
+/ T : return period of design wave
 
 As @pew illustrates, increase in piling duration increases the chance of encountering a design wave non-linearly. And so the best way to lower _p_ is to design the jacket to withstand wave environment with higher return periods, especially if piling duration to achieve storm safety cannot be reduced.
 

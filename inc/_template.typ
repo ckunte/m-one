@@ -25,11 +25,10 @@
 
   // Set the body font
   set text(
-    font: "erewhon", // New Computer Modern
+    font: "New Computer Modern",
     top-edge: "cap-height", 
     bottom-edge: "baseline",
     number-type: "old-style",
-    size: 10pt
     )
   // raw text / code
   show raw: set text(size: 7.5pt)
@@ -99,13 +98,12 @@
   //  smallcaps(lower(match))
   //}
 
-  // line numbers for code
-  show raw.line: it => {
-    text(fill: gray)[#it.number]
-    h(1em)
-    it.body
-  }
-
+  //// line numbers for code
+  //show raw.line: it => {
+  //  text(fill: gray)[#it.number]
+  //  h(1em)
+  //  it.body
+  //}
 
   // The first page.
   page(align(center + horizon)[
