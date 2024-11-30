@@ -16,15 +16,15 @@
   depth: 1
 )
 
-// #outline(
-//   title: [List of Figures],
-//   target: figure.where(kind: image),
-// )
-//
-// #outline(
-//   title: [List of Tables],
-//   target: figure.where(kind: table),
-// )
+#outline(
+  title: [List of Figures],
+  target: figure.where(kind: image),
+)
+
+#outline(
+  title: [List of Tables],
+  target: figure.where(kind: table),
+)
 
 // abbreviations
 #include "/inc/abbr.typ"
