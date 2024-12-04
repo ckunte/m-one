@@ -10,7 +10,7 @@ See @wpp for other parameters referenced in @Puf and @Pus.
 
 #figure(
   image("/img/ylt-legend.png", width: 67%),
-  caption: [Web plate parameters (courtesy: R.H. Kapp~@rhk)]
+  caption: [Web plate parameters (courtesy: R.H. Kapp)]
 ) <wpp>
 
 #pagebreak(weak:true)
