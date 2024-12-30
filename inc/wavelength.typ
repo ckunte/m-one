@@ -6,7 +6,7 @@ For background, dispersion relation#footnote[Dispersion relation (eq. 24), Wave 
 
 $ omega^2 / g = kappa tanh(kappa d) $
 
-When $lim_(arrow.r oo) tanh(k d) tilde.eq 1$, it reduces the expression to:
+When $lim_(d arrow.r oo) tanh(k d) tilde.eq 1$, it reduces the expression to:
 
 $ lambda = 2pi g / omega^2 $
 
